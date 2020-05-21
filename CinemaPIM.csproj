@@ -143,6 +143,12 @@
     <Compile Include="Forms\CinemasForm.Designer.cs">
       <DependentUpon>CinemasForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\DadosDoPagamentoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DadosDoPagamentoForm.designer.cs">
+      <DependentUpon>DadosDoPagamentoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FilmesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,30 @@
     </Compile>
     <Compile Include="Forms\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\mensagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\mensagem.designer.cs">
+      <DependentUpon>mensagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pago.designer.cs">
+      <DependentUpon>Pago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sala.designer.cs">
+      <DependentUpon>Sala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\tipodepago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\tipodepago.designer.cs">
+      <DependentUpon>tipodepago.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -169,11 +199,26 @@
     <EmbeddedResource Include="Forms\CinemasForm.resx">
       <DependentUpon>CinemasForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DadosDoPagamentoForm.resx">
+      <DependentUpon>DadosDoPagamentoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FilmesForm.resx">
       <DependentUpon>FilmesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\mensagem.resx">
+      <DependentUpon>mensagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pago.resx">
+      <DependentUpon>Pago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sala.resx">
+      <DependentUpon>Sala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\tipodepago.resx">
+      <DependentUpon>tipodepago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

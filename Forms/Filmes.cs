@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CinemaPIM.Forms
 {
-    public partial class Pagemento : Form
+    public partial class Filmes : Form
     {
-        public Pagemento()
+        public Filmes()
         {
             InitializeComponent();
         }

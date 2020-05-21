@@ -2,8 +2,6 @@ D:\Documents\Projects\CinemaPIM\bin\Debug\CinemaPIM.exe.config
 D:\Documents\Projects\CinemaPIM\bin\Debug\CinemaPIM.exe
 D:\Documents\Projects\CinemaPIM\bin\Debug\CinemaPIM.pdb
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.csprojAssemblyReference.cache
-D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.Cinemas.resources
-D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.Filmes.resources
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.Home.resources
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Login.resources
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Properties.Resources.resources
@@ -98,3 +96,10 @@ C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\obj\Debug\Cinem
 C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\obj\Debug\CinemaPIM.pdb
 C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\obj\Debug\CinemaPIM.Forms.CinemasForm.resources
 C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\obj\Debug\CinemaPIM.Forms.FilmesForm.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.CinemasForm.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.DadosDoPagamentoForm.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.FilmesForm.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.mensagem.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.Pago.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.Sala.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.tipodepago.resources
