@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,11 +9,16 @@ namespace CinemaPIM.Classes
 {
      static class Session
     {
-        private static string username;
+        private static int idCliente;
+        private static string username; //will need to refactor to usuario
         private static Cinemas cinema;
         private static Filmes filme;
+        private static string horario;
         private static carrinho carrinho;
-        
+
+        public static string Horario { get => horario; set => horario = value; }
+        public static int IdCliente { get => idCliente; set => idCliente = value; }
+
         public static void setUsername(string login)
         {
             username = login.ToString();
@@ -43,13 +49,16 @@ namespace CinemaPIM.Classes
             return filme;
         }
 
-        public static void SetCarrinho(int cliente, string cinema, string horarios, int cadeiras)
+        public static void SetCarrinho()
         {
             Cinemas cinemaSelec = GetCinema();
             Filmes filmesSelec = GetFilme();
-            Ingressos ingressos = new Ingressos(horarios, filmesSelec.Titulo, cinemaSelec.Nome, cadeiras);
-            Ingressos[] collecIngressos = { ingressos };
-            carrinho = new carrinho(cliente, cinemaSelec, collecIngressos);
+            carrinho = new carrinho(IdCliente, cinemaSelec);
+        }
+
+        public static carrinho getCarrinho()
+        {
+            return carrinho;
         }
     }
 }

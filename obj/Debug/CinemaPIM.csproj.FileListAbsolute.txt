@@ -101,5 +101,5 @@ D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.DadosDoPagamentoForm.r
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.FilmesForm.resources
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.mensagem.resources
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.Pago.resources
-D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.Sala.resources
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.tipodepago.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.SalaForm.resources

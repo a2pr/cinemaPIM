@@ -35,6 +35,7 @@
             this.filme4 = new System.Windows.Forms.PictureBox();
             this.filme5 = new System.Windows.Forms.PictureBox();
             this.filme6 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.filme1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.filme2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.filme3)).BeginInit();
@@ -56,6 +57,7 @@
             // filme1
             // 
             this.filme1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.filme1.Enabled = false;
             this.filme1.Location = new System.Drawing.Point(99, 100);
             this.filme1.Name = "filme1";
             this.filme1.Size = new System.Drawing.Size(134, 161);
@@ -66,6 +68,7 @@
             // filme2
             // 
             this.filme2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.filme2.Enabled = false;
             this.filme2.Location = new System.Drawing.Point(321, 100);
             this.filme2.Name = "filme2";
             this.filme2.Size = new System.Drawing.Size(134, 161);
@@ -77,6 +80,7 @@
             // filme3
             // 
             this.filme3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.filme3.Enabled = false;
             this.filme3.Location = new System.Drawing.Point(539, 100);
             this.filme3.Name = "filme3";
             this.filme3.Size = new System.Drawing.Size(134, 161);
@@ -87,6 +91,7 @@
             // filme4
             // 
             this.filme4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.filme4.Enabled = false;
             this.filme4.Location = new System.Drawing.Point(99, 329);
             this.filme4.Name = "filme4";
             this.filme4.Size = new System.Drawing.Size(134, 161);
@@ -97,6 +102,7 @@
             // filme5
             // 
             this.filme5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.filme5.Enabled = false;
             this.filme5.Location = new System.Drawing.Point(321, 329);
             this.filme5.Name = "filme5";
             this.filme5.Size = new System.Drawing.Size(134, 161);
@@ -107,6 +113,7 @@
             // filme6
             // 
             this.filme6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.filme6.Enabled = false;
             this.filme6.Location = new System.Drawing.Point(539, 329);
             this.filme6.Name = "filme6";
             this.filme6.Size = new System.Drawing.Size(134, 161);
@@ -114,11 +121,27 @@
             this.filme6.TabStop = false;
             this.filme6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.filme6_MouseClick);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1:00-3:00",
+            "3:30-5:30",
+            "7:00-9:00",
+            "9:30-11:30"});
+            this.comboBox1.Location = new System.Drawing.Point(689, 114);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(143, 21);
+            this.comboBox1.TabIndex = 7;
+            this.comboBox1.Text = "Escolhe horario";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // FilmesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(844, 561);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.filme6);
             this.Controls.Add(this.filme5);
             this.Controls.Add(this.filme4);
@@ -128,6 +151,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FilmesForm";
             this.Text = "Filmes";
+            this.Load += new System.EventHandler(this.FilmesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.filme1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.filme2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.filme3)).EndInit();
@@ -148,5 +172,6 @@
         private System.Windows.Forms.PictureBox filme4;
         private System.Windows.Forms.PictureBox filme5;
         private System.Windows.Forms.PictureBox filme6;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

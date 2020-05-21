@@ -16,7 +16,7 @@ namespace CinemaPIM.Classes
 
         public Cinemas(int idSelect, string nomeSelect)
         {
-            id = idSelect;
+            Id = idSelect;
             Nome = nomeSelect;
             Filmes = new string[] { };
             Endereco = "";
@@ -25,5 +25,6 @@ namespace CinemaPIM.Classes
         public string Nome { get => nome; set => nome = value; }
         public string[] Filmes { get => filmes; set => filmes = value; }
         public string Endereco { get => endereco; set => endereco = value; }
+        public int Id { get => id; set => id = value; }
     }
 }

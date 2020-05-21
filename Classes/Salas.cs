@@ -12,6 +12,7 @@ namespace CinemaPIM.Classes
         public const string HORARIO_SECOND = "3:30-5:30";
         public const string HORARIO_THIRD = "7:00-9:00";
         public const string HORARIO_FOURTH = "9:30-11:30";
+
         private int id;
         private string[] horarios = {HORARIO_FIRST, HORARIO_SECOND, HORARIO_THIRD, HORARIO_FOURTH};
         private int idCinema;

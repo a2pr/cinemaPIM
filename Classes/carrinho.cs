@@ -11,18 +11,24 @@ namespace CinemaPIM.Classes
         private int id;
         private int idCliente;
         private Cinemas cinema;
-        private Ingressos[] ingresosSelec;
+        private List<Ingressos> ingresosSelec = new List<Ingressos>();
        
-        public carrinho(int cliente, Cinemas cinemaSelec, Ingressos[] ingresso)
+        public carrinho(int cliente, Cinemas cinemaSelec)
         {
             Random rnd = new Random();
             id = rnd.Next(1000 - 5000);
             cinema = cinemaSelec;
-            ingresosSelec = ingresso;
             idCliente = cliente;
         }
         public int IdCliente { get => idCliente; set => idCliente = value; }
-        internal Ingressos[] IngresosSelec { get => ingresosSelec; set => ingresosSelec = value; }
         internal Cinemas Cinema { get => cinema; set => cinema = value; }
+        public List<Ingressos> IngresosSelec { get => ingresosSelec; set => ingresosSelec = value; }
+
+        public void addIngressos(Ingressos selecIngressos)
+        {
+            ingresosSelec.Add(selecIngressos);
+        }
+
+
     }
 }

@@ -173,11 +173,11 @@
     <Compile Include="Forms\Pago.designer.cs">
       <DependentUpon>Pago.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Sala.cs">
+    <Compile Include="Forms\SalaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Sala.designer.cs">
-      <DependentUpon>Sala.cs</DependentUpon>
+    <Compile Include="Forms\SalaForm.designer.cs">
+      <DependentUpon>SalaForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\tipodepago.cs">
       <SubType>Form</SubType>
@@ -214,8 +214,8 @@
     <EmbeddedResource Include="Forms\Pago.resx">
       <DependentUpon>Pago.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Sala.resx">
-      <DependentUpon>Sala.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\SalaForm.resx">
+      <DependentUpon>SalaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\tipodepago.resx">
       <DependentUpon>tipodepago.cs</DependentUpon>
