@@ -1,0 +1,100 @@
+D:\Documents\Projects\CinemaPIM\bin\Debug\CinemaPIM.exe.config
+D:\Documents\Projects\CinemaPIM\bin\Debug\CinemaPIM.exe
+D:\Documents\Projects\CinemaPIM\bin\Debug\CinemaPIM.pdb
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.csprojAssemblyReference.cache
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.Cinemas.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.Filmes.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.Home.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Login.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Properties.Resources.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.csproj.GenerateResource.cache
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.csproj.CoreCompileInputs.cache
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.exe
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.pdb
+D:\Documents\Projects\CinemaPIM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\Npgsql.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\System.Buffers.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\System.Memory.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\System.Numerics.Vectors.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\System.Text.Encodings.Web.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\System.Text.Json.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\System.ValueTuple.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Documents\Projects\CinemaPIM\bin\Debug\Npgsql.pdb
+D:\Documents\Projects\CinemaPIM\bin\Debug\Npgsql.xml
+D:\Documents\Projects\CinemaPIM\bin\Debug\System.Buffers.xml
+D:\Documents\Projects\CinemaPIM\bin\Debug\System.Memory.xml
+D:\Documents\Projects\CinemaPIM\bin\Debug\System.Numerics.Vectors.xml
+D:\Documents\Projects\CinemaPIM\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Documents\Projects\CinemaPIM\bin\Debug\System.Text.Encodings.Web.xml
+D:\Documents\Projects\CinemaPIM\bin\Debug\System.Text.Json.xml
+D:\Documents\Projects\CinemaPIM\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Documents\Projects\CinemaPIM\bin\Debug\System.ValueTuple.xml
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.csproj.CopyComplete
+D:\Documents\Projects\CinemaPIM\bin\Debug\BouncyCastle.Crypto.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\Google.Protobuf.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\K4os.Compression.LZ4.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\K4os.Hash.xxHash.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\MySql.Data.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\Renci.SshNet.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\Ubiety.Dns.Core.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\Zstandard.Net.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\Google.Protobuf.xml
+D:\Documents\Projects\CinemaPIM\bin\Debug\K4os.Compression.LZ4.xml
+D:\Documents\Projects\CinemaPIM\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Documents\Projects\CinemaPIM\bin\Debug\K4os.Hash.xxHash.xml
+D:\Documents\Projects\CinemaPIM\bin\Debug\MySql.Data.xml
+D:\Documents\Projects\CinemaPIM\bin\Debug\Renci.SshNet.xml
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\CinemaPIM.exe.config
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\CinemaPIM.exe
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\CinemaPIM.pdb
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\Google.Protobuf.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\MySql.Data.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\Npgsql.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\Renci.SshNet.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\System.Buffers.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\System.Memory.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\System.Text.Json.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\System.ValueTuple.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\Zstandard.Net.dll
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\Google.Protobuf.xml
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\MySql.Data.xml
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\Npgsql.pdb
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\Npgsql.xml
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\Renci.SshNet.xml
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\System.Buffers.xml
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\System.Memory.xml
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\System.Text.Json.xml
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\bin\Debug\System.ValueTuple.xml
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\obj\Debug\CinemaPIM.csprojAssemblyReference.cache
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\obj\Debug\CinemaPIM.Forms.Home.resources
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\obj\Debug\CinemaPIM.Login.resources
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\obj\Debug\CinemaPIM.Properties.Resources.resources
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\obj\Debug\CinemaPIM.csproj.GenerateResource.cache
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\obj\Debug\CinemaPIM.csproj.CoreCompileInputs.cache
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\obj\Debug\CinemaPIM.csproj.CopyComplete
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\obj\Debug\CinemaPIM.exe
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\obj\Debug\CinemaPIM.pdb
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\obj\Debug\CinemaPIM.Forms.CinemasForm.resources
+C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\obj\Debug\CinemaPIM.Forms.FilmesForm.resources
