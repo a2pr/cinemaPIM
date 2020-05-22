@@ -138,17 +138,29 @@
     <Compile Include="Classes\postgress.cs" />
     <Compile Include="Classes\Salas.cs" />
     <Compile Include="Classes\Session.cs" />
+    <Compile Include="Forms\blockDados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\blockDados.designer.cs">
+      <DependentUpon>blockDados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CinemasForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\CinemasForm.Designer.cs">
       <DependentUpon>CinemasForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\DadosDoPagamentoForm.cs">
+    <Compile Include="Forms\cartaoDadosForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\DadosDoPagamentoForm.designer.cs">
-      <DependentUpon>DadosDoPagamentoForm.cs</DependentUpon>
+    <Compile Include="Forms\cartaoDadosForm.designer.cs">
+      <DependentUpon>cartaoDadosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\falaconosco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\falaconosco.designer.cs">
+      <DependentUpon>falaconosco.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FilmesForm.cs">
       <SubType>Form</SubType>
@@ -162,17 +174,17 @@
     <Compile Include="Forms\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\mensagem.cs">
+    <Compile Include="Forms\paymentConfirmationMessage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\mensagem.designer.cs">
-      <DependentUpon>mensagem.cs</DependentUpon>
+    <Compile Include="Forms\paymentConfirmationMessage.designer.cs">
+      <DependentUpon>paymentConfirmationMessage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Pago.cs">
+    <Compile Include="Forms\PagoConfirmForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Pago.designer.cs">
-      <DependentUpon>Pago.cs</DependentUpon>
+    <Compile Include="Forms\PagoConfirmForm.designer.cs">
+      <DependentUpon>PagoConfirmForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SalaForm.cs">
       <SubType>Form</SubType>
@@ -186,6 +198,12 @@
     <Compile Include="Forms\tipodepago.designer.cs">
       <DependentUpon>tipodepago.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Vendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Vendas.designer.cs">
+      <DependentUpon>Vendas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,11 +216,17 @@
     <Compile Include="Classes\Usuarios.cs" />
     <Compile Include="Repos\InterfaceRepo.cs" />
     <Compile Include="Repos\LoginRepo.cs" />
+    <EmbeddedResource Include="Forms\blockDados.resx">
+      <DependentUpon>blockDados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CinemasForm.resx">
       <DependentUpon>CinemasForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\DadosDoPagamentoForm.resx">
-      <DependentUpon>DadosDoPagamentoForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\cartaoDadosForm.resx">
+      <DependentUpon>cartaoDadosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\falaconosco.resx">
+      <DependentUpon>falaconosco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FilmesForm.resx">
       <DependentUpon>FilmesForm.cs</DependentUpon>
@@ -210,17 +234,20 @@
     <EmbeddedResource Include="Forms\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\mensagem.resx">
-      <DependentUpon>mensagem.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\paymentConfirmationMessage.resx">
+      <DependentUpon>paymentConfirmationMessage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Pago.resx">
-      <DependentUpon>Pago.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\PagoConfirmForm.resx">
+      <DependentUpon>PagoConfirmForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SalaForm.resx">
       <DependentUpon>SalaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\tipodepago.resx">
       <DependentUpon>tipodepago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Vendas.resx">
+      <DependentUpon>Vendas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

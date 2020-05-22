@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace CinemaPIM.Forms
 {
-    public partial class mensagem : Form
+    public partial class falaconosco : Form
     {
-        public mensagem()
+        public falaconosco()
         {
             InitializeComponent();
-        }
-
-        private void mensagem_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

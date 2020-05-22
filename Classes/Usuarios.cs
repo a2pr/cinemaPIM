@@ -16,7 +16,11 @@ namespace CinemaPIM.Classes
         private int telefone;
         private string CPF;
 
+        public int GetId(int id)
+        {
+            return this.id;
 
+        }
         public void SetId(int id)
         {
             this.id = id;

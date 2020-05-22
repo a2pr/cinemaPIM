@@ -935,8 +935,31 @@ namespace CinemaPIM.Forms
             {
                 Session.getCarrinho().addIngressos(x);
             });
-            
 
+            if (Session.GetClientes() == null)
+            {
+                Login loginForm = new Login();
+                this.Hide();
+                loginForm.Show();
+
+            }
+            else
+            {
+                if (Session.GetClientes().UseCard || Session.GetClientes().UsePIMCoin)
+                {
+                    PagoConfirmForm pagoConfirm = new PagoConfirmForm();
+                    this.Hide();
+                    pagoConfirm.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Cliente nao possui metodo de pagamento. Por favor adicione o tipo de pagamento ");
+                    tipodepago tipodePagoForm = new tipodepago();
+                    this.Hide();
+                    tipodePagoForm.Show();
+
+                }
+            }
         }
     }
 }

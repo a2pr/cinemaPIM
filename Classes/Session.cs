@@ -9,16 +9,13 @@ namespace CinemaPIM.Classes
 {
      static class Session
     {
-        private static int idCliente;
         private static Clientes cliente;
-        private static string username; //will need to refactor to usuario
         private static Cinemas cinema;
         private static Filmes filme;
         private static string horario;
         private static carrinho carrinho;
 
         public static string Horario { get => horario; set => horario = value; }
-        public static int IdCliente { get => idCliente; set => idCliente = value; }
 
         public static void setCliente(string email, string senha)
         {
@@ -32,15 +29,6 @@ namespace CinemaPIM.Classes
         public static Clientes GetClientes()
         {
             return cliente;
-        }
-        public static void setUsername(string login)
-        {
-            username = login.ToString();
-        }
-
-        public static string getUsername()
-        {
-            return username;
         }
 
         public static void setCinema(int id, string nome)
@@ -67,12 +55,29 @@ namespace CinemaPIM.Classes
         {
             Cinemas cinemaSelec = GetCinema();
             Filmes filmesSelec = GetFilme();
-            carrinho = new carrinho(IdCliente, cinemaSelec);
+            if (cliente != null)
+            {
+                carrinho = new carrinho(cliente.GetId(), cinemaSelec);
+            }
+            else
+            {
+                carrinho = new carrinho(cinemaSelec);
+            }
+            
         }
 
         public static carrinho getCarrinho()
         {
             return carrinho;
         }
+
+        public static void reset()
+        {
+            cliente = null;
+            cinema = null;
+            filme = null;
+            horario = null;
+            carrinho = null;
+    }
     }
 }

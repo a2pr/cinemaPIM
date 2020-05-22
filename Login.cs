@@ -24,6 +24,35 @@ namespace CinemaPIM
             
         }
 
+        private void nextStep()
+        {
+            if (Session.getCarrinho() == null)
+            {
+                Home home = new Home();
+                home.Show();
+                this.Hide();
+            }
+            else
+            {
+                if (Session.GetClientes().UseCard || Session.GetClientes().UsePIMCoin)
+                {
+                    PagoConfirmForm pagoConfirm = new PagoConfirmForm();
+                    this.Hide();
+                    pagoConfirm.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Cliente nao possui metodo de pagamento. Por favor adicione o tipo de pagamento ");
+                    tipodepago tipodePagoForm = new tipodepago();
+                    this.Hide();
+                    tipodePagoForm.Show();
+
+                }
+            }
+
+         
+
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             Database db = new Database();
@@ -43,21 +72,17 @@ namespace CinemaPIM
 
         private void button1_Click(object sender, EventArgs e)
         {            
-            string usernameInput = username.Text;
-            
-            MessageBox.Show(Session.getUsername() );
+           
             string password =  pass.Text;
             MD5 md5Hash = MD5.Create();
             //MessageBox.Show(MD5Hash.GetMd5Hash(md5Hash, password));
 
             
             Session.setCliente(username.Text, MD5Hash.GetMd5Hash(md5Hash, password));
-            Session.setUsername(usernameInput);
 
             MessageBox.Show(Session.GetClientes().GetEmail() + " with hash " + Session.GetClientes().getSenha());
-            Home home = new Home();
-            home.Show();
-            this.Hide();
+
+            nextStep();
         }
 
         private void label3_Click(object sender, EventArgs e)

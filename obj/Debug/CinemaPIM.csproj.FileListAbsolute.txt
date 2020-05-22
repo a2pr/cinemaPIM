@@ -97,9 +97,12 @@ C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\obj\Debug\Cinem
 C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\obj\Debug\CinemaPIM.Forms.CinemasForm.resources
 C:\Users\A2PR\Google Drive\aula-sexta\PIM\Hely-project\CinemaPIM\obj\Debug\CinemaPIM.Forms.FilmesForm.resources
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.CinemasForm.resources
-D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.DadosDoPagamentoForm.resources
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.FilmesForm.resources
-D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.mensagem.resources
-D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.Pago.resources
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.tipodepago.resources
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.SalaForm.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.PagoConfirmForm.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.blockDados.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.cartaoDadosForm.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.falaconosco.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.Vendas.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.paymentConfirmationMessage.resources

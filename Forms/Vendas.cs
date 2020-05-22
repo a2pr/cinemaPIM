@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace CinemaPIM.Forms
 {
-    public partial class DadosDoPagamentoForm : Form
+    public partial class Vendas : Form
     {
-        public DadosDoPagamentoForm()
+        public Vendas()
         {
             InitializeComponent();
-        }
-
-        private void dadosdopagamento_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

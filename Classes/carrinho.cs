@@ -20,6 +20,12 @@ namespace CinemaPIM.Classes
             cinema = cinemaSelec;
             idCliente = cliente;
         }
+        public carrinho(Cinemas cinemaSelec)
+        {
+            Random rnd = new Random();
+            id = rnd.Next(1000, 5000);
+            cinema = cinemaSelec;
+        }
         public int IdCliente { get => idCliente; set => idCliente = value; }
         internal Cinemas Cinema { get => cinema; set => cinema = value; }
         public List<Ingressos> IngresosSelec { get => ingresosSelec; set => ingresosSelec = value; }
