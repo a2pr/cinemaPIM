@@ -7,7 +7,7 @@ using CinemaPIM.Classes;
 
 namespace CinemaPIM.Repos
 {
-    class LoginRepo :InterfaceRepo
+    class LoginRepo 
     {
         public void connectDb()
         {

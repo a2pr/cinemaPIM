@@ -21,7 +21,7 @@ namespace CinemaPIM.Forms
             textBox3.Text = Session.GetCinema().Nome;
             textBox4.Text = Session.Horario;
             textBox5.Text = Session.getCarrinho().IngresosSelec.Count().ToString() ;
-            textBox6.Text = Convert.ToString(Session.getCarrinho().IngresosSelec.Count() * 15);
+            textBox6.Text = Convert.ToString(Session.getCarrinho().IngresosSelec.Count() * 15); //
 
 
         }

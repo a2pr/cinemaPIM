@@ -131,6 +131,7 @@
     <Compile Include="Classes\Cinemas.cs" />
     <Compile Include="Classes\Clientes.cs" />
     <Compile Include="Classes\Database.cs" />
+    <Compile Include="Classes\DatabaseAdmin.cs" />
     <Compile Include="Classes\Enderecos.cs" />
     <Compile Include="Classes\Filmes.cs" />
     <Compile Include="Classes\ingressos.cs" />
@@ -214,7 +215,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Usuarios.cs" />
-    <Compile Include="Repos\InterfaceRepo.cs" />
     <Compile Include="Repos\LoginRepo.cs" />
     <EmbeddedResource Include="Forms\blockDados.resx">
       <DependentUpon>blockDados.cs</DependentUpon>
