@@ -45,9 +45,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(159, 152);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 26);
+            this.label1.Size = new System.Drawing.Size(73, 26);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Usuario";
+            this.label1.Text = "Email";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -90,6 +90,7 @@
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(133, 20);
             this.username.TabIndex = 4;
+            this.username.TextChanged += new System.EventHandler(this.username_TextChanged);
             // 
             // pass
             // 
@@ -98,6 +99,7 @@
             this.pass.PasswordChar = '*';
             this.pass.Size = new System.Drawing.Size(133, 20);
             this.pass.TabIndex = 5;
+            this.pass.TextChanged += new System.EventHandler(this.pass_TextChanged);
             // 
             // pictureBox1
             // 

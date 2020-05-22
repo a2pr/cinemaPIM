@@ -10,6 +10,7 @@ namespace CinemaPIM.Classes
      static class Session
     {
         private static int idCliente;
+        private static Clientes cliente;
         private static string username; //will need to refactor to usuario
         private static Cinemas cinema;
         private static Filmes filme;
@@ -19,6 +20,19 @@ namespace CinemaPIM.Classes
         public static string Horario { get => horario; set => horario = value; }
         public static int IdCliente { get => idCliente; set => idCliente = value; }
 
+        public static void setCliente(string email, string senha)
+        {
+            cliente = new Clientes(email, senha);
+        }
+        public static void setClienteByDB(Clientes dbCLient)
+        {
+            cliente = dbCLient;
+        }
+
+        public static Clientes GetClientes()
+        {
+            return cliente;
+        }
         public static void setUsername(string login)
         {
             username = login.ToString();

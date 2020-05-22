@@ -22,6 +22,7 @@ namespace CinemaPIM.Forms
             filme = Session.GetFilme();
         }
 
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -37,6 +38,21 @@ namespace CinemaPIM.Forms
             Database db = new Database();
         }
 
+        private void nextStep()
+        {
+            if (filme == null)
+            {
+                FilmesForm filmeForm = new FilmesForm();
+                filmeForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                SalaForm sala = new SalaForm();
+                sala.Show();
+                this.Hide();
+            }
+        }
         private void cinema1Btn_Click(object sender, EventArgs e)
         {
             
@@ -46,17 +62,8 @@ namespace CinemaPIM.Forms
                 MessageBox.Show(Session.GetCinema().Nome);
 
             }
-            if (filme == null)
-            {
-                FilmesForm filmeForm = new FilmesForm();
-                filmeForm.Show();
-                this.Hide();
-            }
-            else
-            {
-                //aqui iremos a pagamentos
-            }
-            
+            nextStep();
+
         }
 
         private void cinema2Btn_Click(object sender, EventArgs e)
@@ -66,17 +73,7 @@ namespace CinemaPIM.Forms
                 Session.setCinema(2, "cinema 2");
                 MessageBox.Show(Session.GetCinema().Nome);
             }
-            if (filme == null)
-            {
-                MessageBox.Show("no filme");
-                FilmesForm filmeForm = new FilmesForm();
-                filmeForm.Show();
-                this.Hide();
-            }
-            else
-            {
-                //aqui iremos a pagamentos
-            }
+            nextStep();
         }
 
         private void cinema3Btn_Click(object sender, EventArgs e)
@@ -86,17 +83,7 @@ namespace CinemaPIM.Forms
                 Session.setCinema(3, "cinema 3");
                 MessageBox.Show(Session.GetCinema().Nome);
             }
-            if (filme == null)
-            {
-                MessageBox.Show("no filme");
-                FilmesForm filmeForm = new FilmesForm();
-                filmeForm.Show();
-                this.Hide();
-            }
-            else
-            {
-                //aqui iremos a pagamentos
-            }
+            nextStep();
         }
 
         private void cinema4Btn_Click(object sender, EventArgs e)
@@ -106,17 +93,7 @@ namespace CinemaPIM.Forms
                 Session.setCinema(4, "cinema 4");
                 MessageBox.Show(Session.GetCinema().Nome);
             }
-            if (filme == null)
-            {
-                MessageBox.Show("no filme");
-                FilmesForm filmeForm = new FilmesForm();
-                filmeForm.Show();
-                this.Hide();
-            }
-            else
-            {
-                //aqui iremos a pagamentos
-            }
+            nextStep();
         }
     }
 }

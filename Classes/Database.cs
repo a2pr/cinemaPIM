@@ -38,6 +38,20 @@ namespace CinemaPIM.Classes
             } catch(Exception e){ }
 
         }
+
+        public void getUsuarioTable()
+        {
+            try
+            {
+                MySqlConnection conn = new MySqlConnection(this.connectionString);
+                conn.Open();
+            }
+            catch (Exception e)
+            {
+
+            }
+            
+        }
     }
 }
     

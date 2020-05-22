@@ -16,7 +16,7 @@ namespace CinemaPIM.Classes
         public carrinho(int cliente, Cinemas cinemaSelec)
         {
             Random rnd = new Random();
-            id = rnd.Next(1000 - 5000);
+            id = rnd.Next(1000,5000);
             cinema = cinemaSelec;
             idCliente = cliente;
         }

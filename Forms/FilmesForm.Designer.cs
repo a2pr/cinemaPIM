@@ -63,6 +63,7 @@
             this.filme1.Size = new System.Drawing.Size(134, 161);
             this.filme1.TabIndex = 1;
             this.filme1.TabStop = false;
+            this.filme1.Click += new System.EventHandler(this.filme1_Click);
             this.filme1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.filme1_MouseClick);
             // 
             // filme2
@@ -86,6 +87,7 @@
             this.filme3.Size = new System.Drawing.Size(134, 161);
             this.filme3.TabIndex = 3;
             this.filme3.TabStop = false;
+            this.filme3.Click += new System.EventHandler(this.filme3_Click);
             this.filme3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.filme3_MouseClick);
             // 
             // filme4

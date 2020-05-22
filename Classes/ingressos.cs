@@ -19,7 +19,7 @@ namespace CinemaPIM.Classes
         public Ingressos( string selectHorario, string selecFilme, string selecCinema, int idCadeira)
         {
             Random rnd = new Random();
-            id = rnd.Next(1 - 1000);
+            id = rnd.Next(1,1000);
             horario = selectHorario;
             filme = selecFilme;
             cinema = selecCinema;

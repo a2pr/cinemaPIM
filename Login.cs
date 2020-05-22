@@ -44,11 +44,17 @@ namespace CinemaPIM
         private void button1_Click(object sender, EventArgs e)
         {            
             string usernameInput = username.Text;
-            Session.setUsername(usernameInput);
+            
             MessageBox.Show(Session.getUsername() );
             string password =  pass.Text;
             MD5 md5Hash = MD5.Create();
-            MessageBox.Show(MD5Hash.GetMd5Hash(md5Hash, password));
+            //MessageBox.Show(MD5Hash.GetMd5Hash(md5Hash, password));
+
+            
+            Session.setCliente(username.Text, MD5Hash.GetMd5Hash(md5Hash, password));
+            Session.setUsername(usernameInput);
+
+            MessageBox.Show(Session.GetClientes().GetEmail() + " with hash " + Session.GetClientes().getSenha());
             Home home = new Home();
             home.Show();
             this.Hide();
@@ -60,6 +66,16 @@ namespace CinemaPIM
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void username_TextChanged(object sender, EventArgs e)
         {
 
         }

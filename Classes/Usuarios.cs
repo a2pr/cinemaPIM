@@ -34,6 +34,10 @@ namespace CinemaPIM.Classes
             this.senha = senha;
 
         }
+        public string getSenha()
+        {
+            return senha;
+        }
 
         public void SetEmail(string email)
         {
