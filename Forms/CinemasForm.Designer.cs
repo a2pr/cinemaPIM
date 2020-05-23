@@ -28,57 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cinema1 = new System.Windows.Forms.PictureBox();
-            this.cinema2 = new System.Windows.Forms.PictureBox();
-            this.cinema3 = new System.Windows.Forms.PictureBox();
-            this.cinema4 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cinema1Btn = new System.Windows.Forms.Button();
             this.cinema2Btn = new System.Windows.Forms.Button();
             this.cinema4Btn = new System.Windows.Forms.Button();
             this.cinema3Btn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.cinema1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cinema2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cinema3)).BeginInit();
+            this.cinema4 = new System.Windows.Forms.PictureBox();
+            this.cinema3 = new System.Windows.Forms.PictureBox();
+            this.cinema2 = new System.Windows.Forms.PictureBox();
+            this.cinema1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.cinema4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cinema3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cinema2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cinema1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // cinema1
-            // 
-            this.cinema1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.cinema1.Location = new System.Drawing.Point(108, 44);
-            this.cinema1.Name = "cinema1";
-            this.cinema1.Size = new System.Drawing.Size(200, 150);
-            this.cinema1.TabIndex = 0;
-            this.cinema1.TabStop = false;
-            this.cinema1.Click += new System.EventHandler(this.cinema1_Click);
-            // 
-            // cinema2
-            // 
-            this.cinema2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.cinema2.Location = new System.Drawing.Point(459, 44);
-            this.cinema2.Name = "cinema2";
-            this.cinema2.Size = new System.Drawing.Size(200, 150);
-            this.cinema2.TabIndex = 1;
-            this.cinema2.TabStop = false;
-            // 
-            // cinema3
-            // 
-            this.cinema3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.cinema3.Location = new System.Drawing.Point(108, 256);
-            this.cinema3.Name = "cinema3";
-            this.cinema3.Size = new System.Drawing.Size(200, 150);
-            this.cinema3.TabIndex = 2;
-            this.cinema3.TabStop = false;
-            // 
-            // cinema4
-            // 
-            this.cinema4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.cinema4.Location = new System.Drawing.Point(459, 256);
-            this.cinema4.Name = "cinema4";
-            this.cinema4.Size = new System.Drawing.Size(200, 150);
-            this.cinema4.TabIndex = 3;
-            this.cinema4.TabStop = false;
             // 
             // label1
             // 
@@ -140,6 +103,47 @@
             this.cinema3Btn.UseVisualStyleBackColor = true;
             this.cinema3Btn.Click += new System.EventHandler(this.cinema3Btn_Click);
             // 
+            // cinema4
+            // 
+            this.cinema4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.cinema4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cinema4.Location = new System.Drawing.Point(459, 256);
+            this.cinema4.Name = "cinema4";
+            this.cinema4.Size = new System.Drawing.Size(200, 150);
+            this.cinema4.TabIndex = 3;
+            this.cinema4.TabStop = false;
+            // 
+            // cinema3
+            // 
+            this.cinema3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.cinema3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cinema3.Location = new System.Drawing.Point(108, 256);
+            this.cinema3.Name = "cinema3";
+            this.cinema3.Size = new System.Drawing.Size(200, 150);
+            this.cinema3.TabIndex = 2;
+            this.cinema3.TabStop = false;
+            // 
+            // cinema2
+            // 
+            this.cinema2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.cinema2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cinema2.Location = new System.Drawing.Point(459, 44);
+            this.cinema2.Name = "cinema2";
+            this.cinema2.Size = new System.Drawing.Size(200, 150);
+            this.cinema2.TabIndex = 1;
+            this.cinema2.TabStop = false;
+            // 
+            // cinema1
+            // 
+            this.cinema1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.cinema1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cinema1.Location = new System.Drawing.Point(108, 44);
+            this.cinema1.Name = "cinema1";
+            this.cinema1.Size = new System.Drawing.Size(200, 150);
+            this.cinema1.TabIndex = 0;
+            this.cinema1.TabStop = false;
+            this.cinema1.Click += new System.EventHandler(this.cinema1_Click);
+            // 
             // CinemasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,10 +162,10 @@
             this.Name = "CinemasForm";
             this.Text = "Cinemas";
             this.Load += new System.EventHandler(this.Cinemas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.cinema1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cinema2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cinema3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cinema4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cinema3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cinema2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cinema1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

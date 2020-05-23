@@ -33,6 +33,17 @@ namespace CinemaPIM.Forms
                 FilmesByCinema = filmesDB.getFilmes();
 
             }
+            setImages();
+        }
+        private void setImages()
+        {
+
+            filme1.BackgroundImage = Properties.Resources.mulan;
+            filme2.BackgroundImage = Properties.Resources.PresenciasDelMal;
+            filme3.BackgroundImage = Properties.Resources.DoLittle;
+            filme4.BackgroundImage = Properties.Resources.godzillavsKong;
+            filme5.BackgroundImage = Properties.Resources.Terremoto;
+            filme6.BackgroundImage = Properties.Resources.predestinado;
         }
 
         private void nextStep()

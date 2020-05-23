@@ -36,7 +36,7 @@ namespace CinemaPIM.Forms
 
         private void Home_Load(object sender, EventArgs e)
         {
-
+            pictureBox1.BackgroundImage = Properties.Resources.mulan;
         }
 
         private void cinemaToolStripMenuItem_Click(object sender, EventArgs e)

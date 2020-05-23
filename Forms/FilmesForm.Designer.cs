@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.filme1 = new System.Windows.Forms.PictureBox();
-            this.filme2 = new System.Windows.Forms.PictureBox();
-            this.filme3 = new System.Windows.Forms.PictureBox();
-            this.filme4 = new System.Windows.Forms.PictureBox();
-            this.filme5 = new System.Windows.Forms.PictureBox();
-            this.filme6 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.filme1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filme2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filme3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filme4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filme5)).BeginInit();
+            this.filme6 = new System.Windows.Forms.PictureBox();
+            this.filme5 = new System.Windows.Forms.PictureBox();
+            this.filme4 = new System.Windows.Forms.PictureBox();
+            this.filme3 = new System.Windows.Forms.PictureBox();
+            this.filme2 = new System.Windows.Forms.PictureBox();
+            this.filme1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.filme6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filme5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filme4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filme3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filme2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filme1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -53,75 +53,6 @@
             this.label1.Size = new System.Drawing.Size(92, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Filmes";
-            // 
-            // filme1
-            // 
-            this.filme1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.filme1.Enabled = false;
-            this.filme1.Location = new System.Drawing.Point(99, 100);
-            this.filme1.Name = "filme1";
-            this.filme1.Size = new System.Drawing.Size(134, 161);
-            this.filme1.TabIndex = 1;
-            this.filme1.TabStop = false;
-            this.filme1.Click += new System.EventHandler(this.filme1_Click);
-            this.filme1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.filme1_MouseClick);
-            // 
-            // filme2
-            // 
-            this.filme2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.filme2.Enabled = false;
-            this.filme2.Location = new System.Drawing.Point(321, 100);
-            this.filme2.Name = "filme2";
-            this.filme2.Size = new System.Drawing.Size(134, 161);
-            this.filme2.TabIndex = 2;
-            this.filme2.TabStop = false;
-            this.filme2.Click += new System.EventHandler(this.filme2_Click);
-            this.filme2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.filme2_MouseClick);
-            // 
-            // filme3
-            // 
-            this.filme3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.filme3.Enabled = false;
-            this.filme3.Location = new System.Drawing.Point(539, 100);
-            this.filme3.Name = "filme3";
-            this.filme3.Size = new System.Drawing.Size(134, 161);
-            this.filme3.TabIndex = 3;
-            this.filme3.TabStop = false;
-            this.filme3.Click += new System.EventHandler(this.filme3_Click);
-            this.filme3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.filme3_MouseClick);
-            // 
-            // filme4
-            // 
-            this.filme4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.filme4.Enabled = false;
-            this.filme4.Location = new System.Drawing.Point(99, 329);
-            this.filme4.Name = "filme4";
-            this.filme4.Size = new System.Drawing.Size(134, 161);
-            this.filme4.TabIndex = 4;
-            this.filme4.TabStop = false;
-            this.filme4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.filme4_MouseClick);
-            // 
-            // filme5
-            // 
-            this.filme5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.filme5.Enabled = false;
-            this.filme5.Location = new System.Drawing.Point(321, 329);
-            this.filme5.Name = "filme5";
-            this.filme5.Size = new System.Drawing.Size(134, 161);
-            this.filme5.TabIndex = 5;
-            this.filme5.TabStop = false;
-            this.filme5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.filme5_MouseClick);
-            // 
-            // filme6
-            // 
-            this.filme6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.filme6.Enabled = false;
-            this.filme6.Location = new System.Drawing.Point(539, 329);
-            this.filme6.Name = "filme6";
-            this.filme6.Size = new System.Drawing.Size(134, 161);
-            this.filme6.TabIndex = 6;
-            this.filme6.TabStop = false;
-            this.filme6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.filme6_MouseClick);
             // 
             // comboBox1
             // 
@@ -137,6 +68,81 @@
             this.comboBox1.TabIndex = 7;
             this.comboBox1.Text = "Escolhe horario";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // filme6
+            // 
+            this.filme6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.filme6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.filme6.Enabled = false;
+            this.filme6.Location = new System.Drawing.Point(539, 329);
+            this.filme6.Name = "filme6";
+            this.filme6.Size = new System.Drawing.Size(134, 161);
+            this.filme6.TabIndex = 6;
+            this.filme6.TabStop = false;
+            this.filme6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.filme6_MouseClick);
+            // 
+            // filme5
+            // 
+            this.filme5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.filme5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.filme5.Enabled = false;
+            this.filme5.Location = new System.Drawing.Point(321, 329);
+            this.filme5.Name = "filme5";
+            this.filme5.Size = new System.Drawing.Size(134, 161);
+            this.filme5.TabIndex = 5;
+            this.filme5.TabStop = false;
+            this.filme5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.filme5_MouseClick);
+            // 
+            // filme4
+            // 
+            this.filme4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.filme4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.filme4.Enabled = false;
+            this.filme4.Location = new System.Drawing.Point(99, 329);
+            this.filme4.Name = "filme4";
+            this.filme4.Size = new System.Drawing.Size(134, 161);
+            this.filme4.TabIndex = 4;
+            this.filme4.TabStop = false;
+            this.filme4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.filme4_MouseClick);
+            // 
+            // filme3
+            // 
+            this.filme3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.filme3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.filme3.Enabled = false;
+            this.filme3.Location = new System.Drawing.Point(539, 100);
+            this.filme3.Name = "filme3";
+            this.filme3.Size = new System.Drawing.Size(134, 161);
+            this.filme3.TabIndex = 3;
+            this.filme3.TabStop = false;
+            this.filme3.Click += new System.EventHandler(this.filme3_Click);
+            this.filme3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.filme3_MouseClick);
+            // 
+            // filme2
+            // 
+            this.filme2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.filme2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.filme2.Enabled = false;
+            this.filme2.Location = new System.Drawing.Point(321, 100);
+            this.filme2.Name = "filme2";
+            this.filme2.Size = new System.Drawing.Size(134, 161);
+            this.filme2.TabIndex = 2;
+            this.filme2.TabStop = false;
+            this.filme2.Click += new System.EventHandler(this.filme2_Click);
+            this.filme2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.filme2_MouseClick);
+            // 
+            // filme1
+            // 
+            this.filme1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.filme1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.filme1.Enabled = false;
+            this.filme1.Location = new System.Drawing.Point(99, 100);
+            this.filme1.Name = "filme1";
+            this.filme1.Size = new System.Drawing.Size(134, 161);
+            this.filme1.TabIndex = 1;
+            this.filme1.TabStop = false;
+            this.filme1.Click += new System.EventHandler(this.filme1_Click);
+            this.filme1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.filme1_MouseClick);
             // 
             // FilmesForm
             // 
@@ -154,12 +160,12 @@
             this.Name = "FilmesForm";
             this.Text = "Filmes";
             this.Load += new System.EventHandler(this.FilmesForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.filme1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filme2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filme3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filme4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filme5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.filme6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filme5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filme4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filme3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filme2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filme1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

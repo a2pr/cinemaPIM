@@ -262,6 +262,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -288,6 +289,39 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mulan.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoLittle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\godzillavsKong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\predestinado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PresenciasDelMal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Terremoto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milleniumShopping.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pontaNegra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sumaUma.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

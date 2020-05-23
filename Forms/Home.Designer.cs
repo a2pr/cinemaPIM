@@ -86,6 +86,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(454, 135);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(176, 199);
@@ -108,10 +109,11 @@
             // result
             // 
             this.result.AutoSize = true;
+            this.result.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.result.ForeColor = System.Drawing.Color.White;
-            this.result.Location = new System.Drawing.Point(50, 168);
+            this.result.Location = new System.Drawing.Point(47, 135);
             this.result.Name = "result";
-            this.result.Size = new System.Drawing.Size(373, 91);
+            this.result.Size = new System.Drawing.Size(359, 200);
             this.result.TabIndex = 4;
             this.result.Text = resources.GetString("result.Text");
             this.result.Click += new System.EventHandler(this.label2_Click);

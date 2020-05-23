@@ -34,6 +34,7 @@ namespace CinemaPIM.Forms
             cinema2Btn.Text = cinemasDisp[1].Nome;
             cinema3Btn.Text = cinemasDisp[2].Nome;
             cinema4Btn.Text = cinemasDisp[3].Nome;
+            setImages();
         }
         private void label1_Click(object sender, EventArgs e)
         {
@@ -50,6 +51,13 @@ namespace CinemaPIM.Forms
             Database db = new Database();
         }
 
+        private void setImages()
+        {
+            cinema1.BackgroundImage = Properties.Resources.descarga;
+            cinema2.BackgroundImage = Properties.Resources.pontaNegra;
+            cinema3.BackgroundImage = Properties.Resources.milleniumShopping;
+            cinema4.BackgroundImage = Properties.Resources.sumaUma;
+        }
         private void nextStep()
         {
             if (filme == null)

@@ -17,7 +17,7 @@ namespace CinemaPIM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FilmesForm());
+            Application.Run(new Home());
         }
     }
 }
