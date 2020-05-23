@@ -11,16 +11,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
 using System.Windows.Forms;
-
+using CinemaPIM.Repos;
 
 namespace CinemaPIM
 {
     public partial class Login : Form
     {
+        private LoginRepo loginDB;
         public Login()
         {
             InitializeComponent();
-            
+            loginDB = new LoginRepo();
             
         }
 
@@ -55,9 +56,7 @@ namespace CinemaPIM
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            Database db = new Database();
-            db.setDB();
-            //MessageBox.Show(amy);
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -71,18 +70,27 @@ namespace CinemaPIM
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {            
-           
+        {
+            
             string password =  pass.Text;
             MD5 md5Hash = MD5.Create();
             //MessageBox.Show(MD5Hash.GetMd5Hash(md5Hash, password));
+            if(loginDB.checkUser(username.Text, MD5Hash.GetMd5Hash(md5Hash, password)))
+            {
+                Session.setCliente(username.Text, MD5Hash.GetMd5Hash(md5Hash, password));
 
-            
-            Session.setCliente(username.Text, MD5Hash.GetMd5Hash(md5Hash, password));
+                MessageBox.Show(Session.GetClientes().GetEmail() + " with hash " + Session.GetClientes().getSenha());
 
-            MessageBox.Show(Session.GetClientes().GetEmail() + " with hash " + Session.GetClientes().getSenha());
+                nextStep();
+            }
+            else
+            {
+                username.Text = "";
+                pass.Text = "";
+                MessageBox.Show("Not Valid user");
+            }
 
-            nextStep();
+          
         }
 
         private void label3_Click(object sender, EventArgs e)

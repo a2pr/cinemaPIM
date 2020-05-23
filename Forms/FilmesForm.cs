@@ -1,4 +1,5 @@
 ﻿using CinemaPIM.Classes;
+using CinemaPIM.Repos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,14 +16,23 @@ namespace CinemaPIM.Forms
     {
         Cinemas cinema;
         Filmes filme;
-        string user;
+        private FilmesRepo filmesDB;
+        private List<Filmes> FilmesByCinema;
         public FilmesForm()
         {
             InitializeComponent();
             cinema = Session.GetCinema();
             filme=  Session.GetFilme();
-            user = Session.getUsername();
+            filmesDB = new FilmesRepo();
+            if (cinema !=null)
+            {
+                FilmesByCinema = filmesDB.getFilmesByIdCinema(cinema.Id);
+            }
+            else
+            {
+                FilmesByCinema = filmesDB.getFilmes();
 
+            }
         }
 
         private void nextStep()
@@ -44,7 +54,7 @@ namespace CinemaPIM.Forms
         {
             if (filme == null)
             {
-                Session.setFilme(1,"filme 1" );
+                Session.setFilme(FilmesByCinema[0].Id, FilmesByCinema[0].Titulo) ;
                 MessageBox.Show(Session.GetFilme().Titulo);
                 Session.Horario = comboBox1.Text;
                 MessageBox.Show(Session.GetFilme().Titulo + " no horario " + Session.Horario);
@@ -57,7 +67,7 @@ namespace CinemaPIM.Forms
         {
             if (filme == null)
             {
-                Session.setFilme(2, "filme 2");
+                Session.setFilme(FilmesByCinema[1].Id, FilmesByCinema[1].Titulo);
                 MessageBox.Show(Session.GetFilme().Titulo);
                 Session.Horario = comboBox1.Text;
                 MessageBox.Show(Session.GetFilme().Titulo + " no horario " + Session.Horario);
@@ -76,7 +86,7 @@ namespace CinemaPIM.Forms
         {
             if (filme == null)
             {
-                Session.setFilme(3, "filme 3");
+                Session.setFilme(FilmesByCinema[2].Id, FilmesByCinema[2].Titulo);
                 MessageBox.Show(Session.GetFilme().Titulo);
                 Session.Horario = comboBox1.Text;
                 MessageBox.Show(Session.GetFilme().Titulo + " no horario " + Session.Horario);
@@ -89,7 +99,7 @@ namespace CinemaPIM.Forms
         {
             if (filme == null)
             {
-                Session.setFilme(4, "filme 4");
+                Session.setFilme(FilmesByCinema[3].Id, FilmesByCinema[3].Titulo);
                 MessageBox.Show(Session.GetFilme().Titulo);
                 Session.Horario = comboBox1.Text;
                 MessageBox.Show(Session.GetFilme().Titulo + " no horario " + Session.Horario);
@@ -101,7 +111,7 @@ namespace CinemaPIM.Forms
         {
             if (filme == null)
             {
-                Session.setFilme(5, "filme 5");
+                Session.setFilme(FilmesByCinema[4].Id, FilmesByCinema[4].Titulo);
                 MessageBox.Show(Session.GetFilme().Titulo);
                 Session.Horario = comboBox1.Text;
                 MessageBox.Show(Session.GetFilme().Titulo + " no horario " + Session.Horario);
@@ -115,8 +125,8 @@ namespace CinemaPIM.Forms
            
             if (filme == null)
             {
-                
-                Session.setFilme(6, "filme 6");
+
+                Session.setFilme(FilmesByCinema[5].Id, FilmesByCinema[5].Titulo);
                 Session.Horario = comboBox1.Text;
                 MessageBox.Show(Session.GetFilme().Titulo + " no horario " + Session.Horario);
             }

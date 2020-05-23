@@ -134,6 +134,7 @@ namespace CinemaPIM.Classes
         }
 
         //Select statement
+
         public List<string>[] Select(string query, int col, List<string> columns)
         {
 
@@ -179,42 +180,6 @@ namespace CinemaPIM.Classes
             }
         }
 
-
-       
-        public void setDB()
-        {
-            try {
-                string mysql = "SELECT * from clientes";
-                MySqlConnection conn = new MySqlConnection(this.connectionString);
-                MySqlCommand command = new MySqlCommand(mysql, conn);
-                conn.Open();
-
-                MySqlDataReader reader = command.ExecuteReader();
-                //MessageBox.Show(conn.State.ToString());
-                if (reader.HasRows)
-                {
-                    //MessageBox.Show("has rows");
-                }
-
-                
-
-            } catch(Exception e){ }
-
-        }
-
-        public void getUsuarioTable()
-        {
-            try
-            {
-                MySqlConnection conn = new MySqlConnection(this.connectionString);
-                conn.Open();
-            }
-            catch (Exception e)
-            {
-
-            }
-            
-        }
     }
 }
     

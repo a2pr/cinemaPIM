@@ -46,7 +46,7 @@
             // cinema1
             // 
             this.cinema1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.cinema1.Location = new System.Drawing.Point(108, 66);
+            this.cinema1.Location = new System.Drawing.Point(108, 44);
             this.cinema1.Name = "cinema1";
             this.cinema1.Size = new System.Drawing.Size(200, 150);
             this.cinema1.TabIndex = 0;
@@ -56,7 +56,7 @@
             // cinema2
             // 
             this.cinema2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.cinema2.Location = new System.Drawing.Point(459, 66);
+            this.cinema2.Location = new System.Drawing.Point(459, 44);
             this.cinema2.Name = "cinema2";
             this.cinema2.Size = new System.Drawing.Size(200, 150);
             this.cinema2.TabIndex = 1;
@@ -65,7 +65,7 @@
             // cinema3
             // 
             this.cinema3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.cinema3.Location = new System.Drawing.Point(108, 270);
+            this.cinema3.Location = new System.Drawing.Point(108, 256);
             this.cinema3.Name = "cinema3";
             this.cinema3.Size = new System.Drawing.Size(200, 150);
             this.cinema3.TabIndex = 2;
@@ -74,7 +74,7 @@
             // cinema4
             // 
             this.cinema4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.cinema4.Location = new System.Drawing.Point(459, 270);
+            this.cinema4.Location = new System.Drawing.Point(459, 256);
             this.cinema4.Name = "cinema4";
             this.cinema4.Size = new System.Drawing.Size(200, 150);
             this.cinema4.TabIndex = 3;
@@ -85,7 +85,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(319, 26);
+            this.label1.Location = new System.Drawing.Point(319, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 31);
             this.label1.TabIndex = 4;
@@ -94,9 +94,11 @@
             // 
             // cinema1Btn
             // 
-            this.cinema1Btn.Location = new System.Drawing.Point(170, 222);
+            this.cinema1Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cinema1Btn.Location = new System.Drawing.Point(81, 211);
+            this.cinema1Btn.MinimumSize = new System.Drawing.Size(200, 10);
             this.cinema1Btn.Name = "cinema1Btn";
-            this.cinema1Btn.Size = new System.Drawing.Size(75, 23);
+            this.cinema1Btn.Size = new System.Drawing.Size(250, 30);
             this.cinema1Btn.TabIndex = 5;
             this.cinema1Btn.Text = "cinema1";
             this.cinema1Btn.UseVisualStyleBackColor = true;
@@ -104,9 +106,11 @@
             // 
             // cinema2Btn
             // 
-            this.cinema2Btn.Location = new System.Drawing.Point(511, 222);
+            this.cinema2Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cinema2Btn.Location = new System.Drawing.Point(432, 211);
+            this.cinema2Btn.MinimumSize = new System.Drawing.Size(200, 10);
             this.cinema2Btn.Name = "cinema2Btn";
-            this.cinema2Btn.Size = new System.Drawing.Size(75, 23);
+            this.cinema2Btn.Size = new System.Drawing.Size(250, 30);
             this.cinema2Btn.TabIndex = 5;
             this.cinema2Btn.Text = "cinema2";
             this.cinema2Btn.UseVisualStyleBackColor = true;
@@ -114,9 +118,11 @@
             // 
             // cinema4Btn
             // 
-            this.cinema4Btn.Location = new System.Drawing.Point(511, 426);
+            this.cinema4Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cinema4Btn.Location = new System.Drawing.Point(432, 416);
+            this.cinema4Btn.MinimumSize = new System.Drawing.Size(200, 10);
             this.cinema4Btn.Name = "cinema4Btn";
-            this.cinema4Btn.Size = new System.Drawing.Size(75, 23);
+            this.cinema4Btn.Size = new System.Drawing.Size(250, 30);
             this.cinema4Btn.TabIndex = 5;
             this.cinema4Btn.Text = "cinema4";
             this.cinema4Btn.UseVisualStyleBackColor = true;
@@ -124,9 +130,11 @@
             // 
             // cinema3Btn
             // 
-            this.cinema3Btn.Location = new System.Drawing.Point(160, 426);
+            this.cinema3Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cinema3Btn.Location = new System.Drawing.Point(81, 416);
+            this.cinema3Btn.MinimumSize = new System.Drawing.Size(200, 10);
             this.cinema3Btn.Name = "cinema3Btn";
-            this.cinema3Btn.Size = new System.Drawing.Size(75, 23);
+            this.cinema3Btn.Size = new System.Drawing.Size(250, 30);
             this.cinema3Btn.TabIndex = 5;
             this.cinema3Btn.Text = "cinema3";
             this.cinema3Btn.UseVisualStyleBackColor = true;

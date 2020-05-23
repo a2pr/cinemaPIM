@@ -1,4 +1,5 @@
 ﻿using CinemaPIM.Classes;
+using CinemaPIM.Repos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,14 +16,25 @@ namespace CinemaPIM.Forms
     {
         Cinemas cinema;
         Filmes filme;
+        private CinemasRepo cinemaDB;
+        private List<Cinemas> cinemasDisp; 
         public CinemasForm()
         {
             InitializeComponent();
+            cinemaDB = new CinemasRepo();
+            cinemasDisp = cinemaDB.getCinemas();
             cinema = Session.GetCinema();
             filme = Session.GetFilme();
+            setCinema();
         }
 
-
+        private void setCinema()
+        {
+            cinema1Btn.Text = cinemasDisp[0].Nome;
+            cinema2Btn.Text = cinemasDisp[1].Nome;
+            cinema3Btn.Text = cinemasDisp[2].Nome;
+            cinema4Btn.Text = cinemasDisp[3].Nome;
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -58,7 +70,7 @@ namespace CinemaPIM.Forms
             
             if (cinema == null)
             {
-                Session.setCinema(1, "cinema 1");
+                Session.setCinema(cinemasDisp[0].Id, cinema1Btn.Text);
                 MessageBox.Show(Session.GetCinema().Nome);
 
             }
@@ -70,7 +82,7 @@ namespace CinemaPIM.Forms
         {
             if (cinema == null)
             {
-                Session.setCinema(2, "cinema 2");
+                Session.setCinema(cinemasDisp[1].Id, cinema2Btn.Text);
                 MessageBox.Show(Session.GetCinema().Nome);
             }
             nextStep();
@@ -80,7 +92,7 @@ namespace CinemaPIM.Forms
         {
             if (cinema == null)
             {
-                Session.setCinema(3, "cinema 3");
+                Session.setCinema(cinemasDisp[2].Id, cinema3Btn.Text);
                 MessageBox.Show(Session.GetCinema().Nome);
             }
             nextStep();
@@ -90,7 +102,7 @@ namespace CinemaPIM.Forms
         {;
             if (cinema == null)
             {
-                Session.setCinema(4, "cinema 4");
+                Session.setCinema(cinemasDisp[3].Id, cinema4Btn.Text);
                 MessageBox.Show(Session.GetCinema().Nome);
             }
             nextStep();

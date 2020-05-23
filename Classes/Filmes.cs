@@ -23,6 +23,7 @@ namespace CinemaPIM.Classes
             duracao = "";
             estria = ""; 
         }
+
         public int Id { get => id; set => id = value; }
         public string Titulo { get => titulo; set => titulo = value; }
         public string Categorias { get => categorias; set => categorias = value; }

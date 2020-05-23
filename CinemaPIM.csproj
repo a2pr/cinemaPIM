@@ -215,6 +215,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Usuarios.cs" />
+    <Compile Include="Repos\CinemasRepo.cs" />
+    <Compile Include="Repos\FilmesRepo.cs" />
     <Compile Include="Repos\LoginRepo.cs" />
     <EmbeddedResource Include="Forms\blockDados.resx">
       <DependentUpon>blockDados.cs</DependentUpon>
