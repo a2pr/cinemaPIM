@@ -127,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\cadeira.cs" />
+    <Compile Include="Classes\Card.cs" />
     <Compile Include="Classes\carrinho.cs" />
     <Compile Include="Classes\Cinemas.cs" />
     <Compile Include="Classes\Clientes.cs" />
@@ -136,7 +137,6 @@
     <Compile Include="Classes\Filmes.cs" />
     <Compile Include="Classes\ingressos.cs" />
     <Compile Include="Classes\MD5Hash.cs" />
-    <Compile Include="Classes\postgress.cs" />
     <Compile Include="Classes\Salas.cs" />
     <Compile Include="Classes\Session.cs" />
     <Compile Include="Forms\blockDados.cs">
@@ -215,7 +215,10 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Usuarios.cs" />
+    <Compile Include="Repos\CadeirasRepo.cs" />
+    <Compile Include="Repos\CardRepo.cs" />
     <Compile Include="Repos\CinemasRepo.cs" />
+    <Compile Include="Repos\ClienteRepo.cs" />
     <Compile Include="Repos\FilmesRepo.cs" />
     <Compile Include="Repos\LoginRepo.cs" />
     <EmbeddedResource Include="Forms\blockDados.resx">

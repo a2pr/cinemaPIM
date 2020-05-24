@@ -17,9 +17,9 @@ namespace CinemaPIM.Classes
 
         public static string Horario { get => horario; set => horario = value; }
 
-        public static void setCliente(string email, string senha)
+        public static void setCliente(Clientes newCLiente)
         {
-            cliente = new Clientes(email, senha);
+            cliente = newCLiente;
         }
         public static void setClienteByDB(Clientes dbCLient)
         {

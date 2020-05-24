@@ -77,9 +77,8 @@ namespace CinemaPIM
             //MessageBox.Show(MD5Hash.GetMd5Hash(md5Hash, password));
             if(loginDB.checkUser(username.Text, MD5Hash.GetMd5Hash(md5Hash, password)))
             {
-                Session.setCliente(username.Text, MD5Hash.GetMd5Hash(md5Hash, password));
-
-                MessageBox.Show(Session.GetClientes().GetEmail() + " with hash " + Session.GetClientes().getSenha());
+                Clientes currentCLiente=  loginDB.getCliente(username.Text);
+                Session.setCliente(currentCLiente);
 
                 nextStep();
             }
