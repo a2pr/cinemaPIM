@@ -925,7 +925,7 @@ namespace CinemaPIM.Forms
             {
                 if (x != null)
                 {
-                    ing.Add(new Ingressos(horarioSelec, filmeTitulo,cinemaNome, x.Id));
+                    ing.Add(new Ingressos(horarioSelec, filmeTitulo,cinemaNome, x));
                 }
             });
 

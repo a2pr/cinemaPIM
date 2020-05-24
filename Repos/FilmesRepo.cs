@@ -8,11 +8,9 @@ using System.Threading.Tasks;
 namespace CinemaPIM.Repos
 {
     
-    class FilmesRepo
+    class FilmesRepo :Database
     {
         public const int COLFILMS = 3;
-
-        private Database db = new Database();
 
         public void connectDb()
         {
@@ -32,7 +30,7 @@ namespace CinemaPIM.Repos
             columnas.Add("titulo");
             columnas.Add("rating");
 
-            List<string>[] data = db.Select(query, 3, columnas);
+            List<string>[] data = Select(query, 3, columnas);
 
             List<Filmes> filmes = new List<Filmes>();
 
@@ -63,7 +61,7 @@ namespace CinemaPIM.Repos
             columnas.Add("titulo");
             columnas.Add("rating");
 
-            List<string>[] data = db.Select(query, 3, columnas);
+            List<string>[] data = Select(query, 3, columnas);
 
             List<Filmes> filmes = new List<Filmes>();
 
@@ -78,6 +76,20 @@ namespace CinemaPIM.Repos
             }
 
             return filmes;
+        }
+
+
+        public int getFilmeIdByTituloAndCinema(string titulo, string cinema)
+        {
+            string query = "SELECT f.id FROM `filme`f Inner join `cinemas` c ON f.cinemas_id = c.id WHERE f.titulo=" + 
+                "'" + titulo + "'" + " and c.nome=" + "'"+ cinema + "'"+";";
+
+            List<string> columnas = new List<string>();
+            columnas.Add("id");
+
+            List<string>[] data = Select(query,1,columnas);
+
+            return Convert.ToInt32( data[0][0]);
         }
     }
 }

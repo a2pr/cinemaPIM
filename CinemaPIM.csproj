@@ -126,6 +126,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\BlockPIM.cs" />
     <Compile Include="Classes\cadeira.cs" />
     <Compile Include="Classes\Card.cs" />
     <Compile Include="Classes\carrinho.cs" />
@@ -137,6 +138,7 @@
     <Compile Include="Classes\Filmes.cs" />
     <Compile Include="Classes\ingressos.cs" />
     <Compile Include="Classes\MD5Hash.cs" />
+    <Compile Include="Classes\order.cs" />
     <Compile Include="Classes\Salas.cs" />
     <Compile Include="Classes\Session.cs" />
     <Compile Include="Forms\blockDados.cs">
@@ -215,12 +217,16 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Usuarios.cs" />
+    <Compile Include="Repos\BlockRepo.cs" />
     <Compile Include="Repos\CadeirasRepo.cs" />
     <Compile Include="Repos\CardRepo.cs" />
     <Compile Include="Repos\CinemasRepo.cs" />
     <Compile Include="Repos\ClienteRepo.cs" />
     <Compile Include="Repos\FilmesRepo.cs" />
+    <Compile Include="Repos\IngressosRepo.cs" />
     <Compile Include="Repos\LoginRepo.cs" />
+    <Compile Include="Repos\OrderRepo.cs" />
+    <Compile Include="Repos\PagamentoRepo.cs" />
     <EmbeddedResource Include="Forms\blockDados.resx">
       <DependentUpon>blockDados.cs</DependentUpon>
     </EmbeddedResource>

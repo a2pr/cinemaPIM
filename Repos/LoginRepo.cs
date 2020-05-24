@@ -7,9 +7,8 @@ using CinemaPIM.Classes;
 
 namespace CinemaPIM.Repos
 {
-    class LoginRepo 
+    class LoginRepo :Database
     {
-        private Database db = new Database();
         public void connectDb()
         {
         }
@@ -22,7 +21,7 @@ namespace CinemaPIM.Repos
 
             columnas.Add("email");
             columnas.Add("password");
-            List<string>[] cliente= db.Select(query,2,columnas);
+            List<string>[] cliente= Select(query,2,columnas);
 
             if (cliente[0].Contains(email))
             {
@@ -47,11 +46,11 @@ namespace CinemaPIM.Repos
             columnas.Add("use_card");
             columnas.Add("use_pimcoin");
             columnas.Add("id_usuario_id");
-            List<string>[] cliente= db.Select(query,6,columnas);
+            List<string>[] cliente= Select(query,6,columnas);
 
 
-            bool usePIM = String.IsNullOrEmpty(cliente[5].ToString());
-            bool useCard = String.IsNullOrEmpty(cliente[4].ToString());
+            bool usePIM = String.IsNullOrEmpty(cliente[5][0]);
+            bool useCard = String.IsNullOrEmpty(cliente[4][0]);
             string cpf = cliente[2][0];
 
             Clientes newCliente = new Clientes(

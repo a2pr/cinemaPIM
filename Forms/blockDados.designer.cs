@@ -53,9 +53,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label3.Location = new System.Drawing.Point(111, 170);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 20);
+            this.label3.Size = new System.Drawing.Size(255, 20);
             this.label3.TabIndex = 35;
-            this.label3.Text = "Chave publica";
+            this.label3.Text = "Chave publica (menor a 1000 char)";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
@@ -106,6 +106,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "blockDados";
             this.Text = "pagobitcoin";
+            this.Load += new System.EventHandler(this.blockDados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

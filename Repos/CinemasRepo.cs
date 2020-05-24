@@ -7,11 +7,10 @@ using CinemaPIM.Classes;
 
 namespace CinemaPIM.Repos
 {
-    class CinemasRepo
+    class CinemasRepo :Database
     {
         public const int COLFILMS = 3;
 
-        private Database db = new Database();
 
         public void connectDb()
         {
@@ -29,7 +28,7 @@ namespace CinemaPIM.Repos
             columnas.Add("id");
             columnas.Add("nome");
 
-            List<string>[] data = db.Select(query, 2, columnas);
+            List<string>[] data = Select(query, 2, columnas);
 
             List<Cinemas> cinemas= new List<Cinemas>();
 
@@ -42,6 +41,18 @@ namespace CinemaPIM.Repos
                 cinemas.Add(newCinema);
             }
             return cinemas;
+        }
+
+        public int getCinemaIdByName(string cinema)
+        {
+            string query = "SELECT id FROM `cinemas` WHERE `nome` =" + "'" + cinema + "'" + ";";
+            
+            List<string> columnas = new List<string>();
+            columnas.Add("id");
+
+            List<string>[] data = Select(query, 1, columnas);
+
+            return Convert.ToInt32( data[0][0]);
         }
     }
 }

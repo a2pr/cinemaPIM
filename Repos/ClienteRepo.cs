@@ -15,5 +15,10 @@ namespace CinemaPIM.Repos
             string query = "UPDATE `clientes` SET `use_card`= 1 WHERE `id`="+id;
             Update(query);
         }
+        public void updateUsePIMCoin(int id)
+        {
+            string query = "UPDATE `clientes` SET `use_pimcoin`= 1 WHERE id=" + id;
+            Update(query);
+        }
     }
 }

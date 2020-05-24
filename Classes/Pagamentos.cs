@@ -9,48 +9,34 @@ namespace CinemaPIM.Classes
     class Pagamentos
     {
         private int id;
-        private string nomeCliente;
-        private string cinema;
-        private string valor;
+        private Clientes cliente;
+        private float valor;
 
-        //public int getId()
-        //{
-        //    return this->id;
-        //}
+        public Pagamentos(Clientes cliente, float valor)
+        {
+            this.cliente = cliente;
+            this.valor = valor;
+        }
+        public Pagamentos(int id, Clientes cliente, float valor)
+        {
+            Random rnd = new Random();
+            this.id = rnd.Next(10000, 11000);
+            this.cliente = cliente;
+            this.valor = valor;
+        }
 
-        //public void setId(mixed id)
-        //{
-        //    this->id = id;
-        //}
 
-        //public string getNomeCliente()
-        //{
-        //    return this->nomeCliente;
-        //}
 
-        //public string setNomeCliente(mixed nome)
-        //{
-        //    this->nomeCliente = nome;
-        //}
+        public float Valor { get => valor; set => valor = value; }
 
-        //public string getCinema()
-        //{
-        //    return this->titulo;
-        //}
+        public Clientes getCliente()
+        {
+            return cliente;
+        }
 
-        //public void setCinema(mixed cinema)
-        //{
-        //    this->cinema = cinema;
-        //}
-
-        //public string getValor()
-        //{
-        //    return this->valor;
-        //}
-
-        //public void setValor(mixed valor)
-        //{
-        //    this->valor = valor;
-        //}
+        public int getId()
+        {
+            return id;
+        }
     }
 }
