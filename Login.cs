@@ -29,9 +29,19 @@ namespace CinemaPIM
         {
             if (Session.getCarrinho() == null)
             {
-                Home home = new Home();
-                home.Show();
-                this.Hide();
+                if (loginDB.checkAdmin(username.Text))
+                {
+                    adminDashboard admin = new adminDashboard();
+                    admin.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    Home home = new Home();
+                    home.Show();
+                    this.Hide();
+                }
+                
             }
             else
             {
@@ -77,8 +87,11 @@ namespace CinemaPIM
             //MessageBox.Show(MD5Hash.GetMd5Hash(md5Hash, password));
             if(loginDB.checkUser(username.Text, MD5Hash.GetMd5Hash(md5Hash, password)))
             {
-                Clientes currentCLiente=  loginDB.getCliente(username.Text);
-                Session.setCliente(currentCLiente);
+                if (!loginDB.checkAdmin(username.Text))
+                {
+                    Clientes currentCLiente = loginDB.getCliente(username.Text);
+                    Session.setCliente(currentCLiente);
+                }
 
                 nextStep();
             }

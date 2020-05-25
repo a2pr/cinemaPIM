@@ -19,8 +19,8 @@ namespace CinemaPIM.Repos
             FilmesRepo filmesDb = new FilmesRepo();
             CinemasRepo cinemaDb = new CinemasRepo();
             int id = ingresso.Id;
-            int filmeId = filmesDb.getFilmeIdByTituloAndCinema(ingresso.Cinema, ingresso.Filme);
-            int cinemaId = cinemaDb.getCinemaIdByName(ingresso.Filme);
+            int filmeId = filmesDb.getFilmeIdByTituloAndCinema(ingresso.Filme, ingresso.Cinema );
+            int cinemaId = cinemaDb.getCinemaIdByName(ingresso.Cinema);
             int cadeiraId = ingresso.getCadeira().Id;
             int orderId = newOrder.getId();
 

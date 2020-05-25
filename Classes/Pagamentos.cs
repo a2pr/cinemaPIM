@@ -12,12 +12,8 @@ namespace CinemaPIM.Classes
         private Clientes cliente;
         private float valor;
 
-        public Pagamentos(Clientes cliente, float valor)
-        {
-            this.cliente = cliente;
-            this.valor = valor;
-        }
-        public Pagamentos(int id, Clientes cliente, float valor)
+
+        public Pagamentos( Clientes cliente, float valor)
         {
             Random rnd = new Random();
             this.id = rnd.Next(10000, 11000);

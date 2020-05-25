@@ -33,6 +33,28 @@ namespace CinemaPIM.Repos
             }
 
         }
+        public bool checkAdmin(string email)
+        {
+            string query = "SELECT id FROM usuarios WHERE email="+ 
+                "'"+ email+ "'"+ "and admin= 1;";
+            List<string> columnas= new List<string>();
+
+            columnas.Add("id");
+
+            List<string>[] cliente= Select(query,1,columnas);
+
+            int admin = Convert.ToInt32(cliente[0][0]);
+
+            if (admin > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
         public Clientes getCliente(string email)
         {
             string query = "SELECT c.id, c.endereco_id, c.cpf,c.use_card, c.use_pimcoin, c.id_usuario_id FROM clientes c " +

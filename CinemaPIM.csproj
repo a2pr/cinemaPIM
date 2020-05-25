@@ -195,6 +195,12 @@
     <Compile Include="Forms\SalaForm.designer.cs">
       <DependentUpon>SalaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Admin\adminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\adminDashboard.designer.cs">
+      <DependentUpon>adminDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\tipodepago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,6 +259,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SalaForm.resx">
       <DependentUpon>SalaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin\adminDashboard.resx">
+      <DependentUpon>adminDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\tipodepago.resx">
       <DependentUpon>tipodepago.cs</DependentUpon>

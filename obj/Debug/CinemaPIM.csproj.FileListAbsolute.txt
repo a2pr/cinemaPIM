@@ -106,3 +106,4 @@ D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.cartaoDadosForm.resour
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.falaconosco.resources
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.Vendas.resources
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.paymentConfirmationMessage.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.adminDashboard.resources
