@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CinemaPIM.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,7 @@ namespace CinemaPIM.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Session.reset();
             Home home = new Home();
             this.Hide();
             home.Show();

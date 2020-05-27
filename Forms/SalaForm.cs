@@ -923,10 +923,14 @@ namespace CinemaPIM.Forms
             List<Ingressos> ing = new List<Ingressos>();
             cadeiras.ForEach(x =>
             {
+                Random rnd = new Random();
                 if (x != null)
                 {
-                    ing.Add(new Ingressos(horarioSelec, filmeTitulo,cinemaNome, x));
+                    Ingressos newIngressos = new Ingressos(horarioSelec, filmeTitulo, cinemaNome, x);
+                    newIngressos.Id = rnd.Next(1, 10000);
+                    ing.Add(newIngressos);
                 }
+                rnd = null;
             });
 
             Session.SetCarrinho();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CinemaPIM.Repos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
@@ -16,11 +17,11 @@ namespace CinemaPIM.Classes
         private int cadeiraSelec;
         private float valor;
         private cadeira CadeiraSelect;
+        private Random rnd = new Random();
 
         public Ingressos( string selectHorario, string selecFilme, string selecCinema, int idCadeira)
         {
-            Random rnd = new Random();
-            id = rnd.Next(1,1000);
+            id = rnd.Next(1,10000);
             horario = selectHorario;
             filme = selecFilme;
             cinema = selecCinema;
@@ -29,8 +30,7 @@ namespace CinemaPIM.Classes
         }
         public Ingressos(string selectHorario, string selecFilme, string selecCinema, cadeira selecCadeira)
         {
-            Random rnd = new Random();
-            id = rnd.Next(1, 1000);
+            id = rnd.Next(1, 10000);
             horario = selectHorario;
             filme = selecFilme;
             cinema = selecCinema;
@@ -48,4 +48,6 @@ namespace CinemaPIM.Classes
         }
         public float Valor { get => valor; set => valor = value; }
     }
+
+
 }

@@ -107,3 +107,6 @@ D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.falaconosco.resources
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.Vendas.resources
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.paymentConfirmationMessage.resources
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.adminDashboard.resources
+D:\Documents\Projects\CinemaPIM\bin\Debug\MySqlBackup.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\System.Data.SqlClient.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\System.Data.SqlClient.xml

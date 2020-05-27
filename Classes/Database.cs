@@ -38,7 +38,7 @@ namespace CinemaPIM.Classes
             connection = new MySqlConnection(connectionString);
         }
         //open connection to database
-        private bool OpenConnection()
+        protected bool OpenConnection()
         {
             try
             {
@@ -67,7 +67,7 @@ namespace CinemaPIM.Classes
         }
 
         //Close connection
-        private bool CloseConnection()
+        protected bool CloseConnection()
         {
             try
             {

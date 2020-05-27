@@ -43,9 +43,8 @@ namespace CinemaPIM.Repos
 
             List<string>[] cliente= Select(query,1,columnas);
 
-            int admin = Convert.ToInt32(cliente[0][0]);
-
-            if (admin > 0)
+            
+            if (cliente[0].Count!=0)
             {
                 return true;
             }
@@ -71,8 +70,8 @@ namespace CinemaPIM.Repos
             List<string>[] cliente= Select(query,6,columnas);
 
 
-            bool usePIM = String.IsNullOrEmpty(cliente[5][0]);
-            bool useCard = String.IsNullOrEmpty(cliente[4][0]);
+            bool usePIM = !String.IsNullOrEmpty(cliente[4][0]);
+            bool useCard = !String.IsNullOrEmpty(cliente[3][0]);
             string cpf = cliente[2][0];
 
             Clientes newCliente = new Clientes(

@@ -7,6 +7,7 @@ using System.IO;
 using System.Diagnostics;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using System.Data;
 
 namespace CinemaPIM.Classes
 {
@@ -19,79 +20,126 @@ namespace CinemaPIM.Classes
         }
         //Backup
 
+
+        public DataTable table()
+        {
+            base.OpenConnection();
+            string query = "SELECT o.id, o.id_cliente_id as idCliente,  c.nome as Cinema, f.titulo as Filme, p.valor, " +
+               "p.use_card as useCard, p.use_pimcoin as usePIMCoin  FROM `order` o inner Join  pagamento p on o.id_pagamento_id = p.id " +
+               "inner join ingressos i ON i.id_order_id = o.id inner join cinemas c ON i.cinema_id = c.id inner join ingressos_filme ingf ON " +
+               "ingf.ingressos_id - i.id INNER join filme f ON f.id = ingf.filme_id";
+
+            MySqlDataAdapter sql = new MySqlDataAdapter(query, base.connection);
+
+            DataTable dtbl = new DataTable();
+            sql.Fill(dtbl);
+            base.CloseConnection();
+            return dtbl;
+
+        }
+
+        public DataTable getCinemas()
+        {
+            base.OpenConnection();
+            string query = "SELECT  c.nome as Cinemas, sum(i.valor) as totalVendas  FROM `order` o inner join pagamento p " +
+                "ON o.id_pagamento_id = p.id inner join ingressos i ON i.id_order_id = o.id inner join cinemas c " +
+                "ON i.cinema_id = c.id group by c.nome";
+
+
+            MySqlDataAdapter sql = new MySqlDataAdapter(query, base.connection);
+
+            DataTable dtbl = new DataTable();
+            sql.Fill(dtbl);
+            base.CloseConnection();
+            return dtbl;
+        }
+
+        public DataTable getFilmes()
+        {
+            base.OpenConnection();
+            string query = "SELECT  f.titulo as Filme, sum(i.valor) as total  FROM `order` o " +
+                "inner join pagamento p ON o.id_pagamento_id = p.id inner join ingressos i ON" +
+                " i.id_order_id = o.id inner join ingressos_filme inf on i.id = inf.ingressos_id " +
+                "inner join filme f ON inf.filme_id = f.id group by f.titulo";
+
+
+            MySqlDataAdapter sql = new MySqlDataAdapter(query, base.connection);
+
+            DataTable dtbl = new DataTable();
+            sql.Fill(dtbl);
+            base.CloseConnection();
+            return dtbl;
+
+        }
+
+        public DataTable getCard()
+        {
+            base.OpenConnection();
+            string query = "SELECT  sum(i.valor) as total  FROM `order` o " +
+                " inner join pagamento p ON o.id_pagamento_id = p.id inner join ingressos i" +
+                " ON i.id_order_id = o.id where p.use_card = 1";
+
+
+            MySqlDataAdapter sql = new MySqlDataAdapter(query, base.connection);
+
+            DataTable dtbl = new DataTable();
+            sql.Fill(dtbl);
+            base.CloseConnection();
+            return dtbl;
+
+        }
+        public DataTable getPIMCoin()
+        {
+            base.OpenConnection();
+            string query = "SELECT  sum(i.valor) as total  FROM `order` o " +
+                " inner join pagamento p ON o.id_pagamento_id = p.id inner join ingressos i" +
+                " ON i.id_order_id = o.id where p.use_pimcoin =1";
+
+
+            MySqlDataAdapter sql = new MySqlDataAdapter(query, base.connection);
+
+            DataTable dtbl = new DataTable();
+            sql.Fill(dtbl);
+            base.CloseConnection();
+            return dtbl;
+
+        }
+
+
         public void Backup()
         {
-            try
+            string file = "D:\\Documents\\Projects\\CinemaPIM\\backup.sql";
+            using (MySqlConnection conn = base.connection)
             {
-                DateTime Time = DateTime.Now;
-                int year = Time.Year;
-                int month = Time.Month;
-                int day = Time.Day;
-                int hour = Time.Hour;
-                int minute = Time.Minute;
-                int second = Time.Second;
-                int millisecond = Time.Millisecond;
-
-                //Save file to C:\ with the current date as a filename
-                string path;
-                path = "C:\\MySqlBackup" + year + "-" + month + "-" + day +
-            "-" + hour + "-" + minute + "-" + second + "-" + millisecond + ".sql";
-                StreamWriter file = new StreamWriter(path);
-
-
-                ProcessStartInfo psi = new ProcessStartInfo();
-                psi.FileName = "mysqldump";
-                psi.RedirectStandardInput = false;
-                psi.RedirectStandardOutput = true;
-                psi.Arguments = string.Format(@"-u{0} -p{1} -h{2} {3}",
-                    uid, password, server, database);
-                psi.UseShellExecute = false;
-
-                Process process = Process.Start(psi);
-
-                string output;
-                output = process.StandardOutput.ReadToEnd();
-                file.WriteLine(output);
-                process.WaitForExit();
-                file.Close();
-                process.Close();
-            }
-            catch (IOException ex)
-            {
-                MessageBox.Show("Error , unable to backup!");
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    using (MySqlBackup mb = new MySqlBackup(cmd))
+                    {
+                        cmd.Connection = conn;
+                        mb.ExportToFile(file);
+                        conn.Close();
+                    }
+                }
             }
         }
 
         //Restore
         public void Restore()
         {
-            try
+            /*will be use in testing*/
+            string file = "D:\\Documents\\Projects\\CinemaPIM\\backup.sql";
+            using (MySqlConnection conn = base.connection)
             {
-                //Read file from C:\
-                string path;
-                path = "C:\\MySqlBackup.sql";
-                StreamReader file = new StreamReader(path);
-                string input = file.ReadToEnd();
-                file.Close();
-
-                ProcessStartInfo psi = new ProcessStartInfo();
-                psi.FileName = "mysql";
-                psi.RedirectStandardInput = true;
-                psi.RedirectStandardOutput = false;
-                psi.Arguments = string.Format(@"-u{0} -p{1} -h{2} {3}",
-                    uid, password, server, database);
-                psi.UseShellExecute = false;
-
-
-                Process process = Process.Start(psi);
-                process.StandardInput.WriteLine(input);
-                process.StandardInput.Close();
-                process.WaitForExit();
-                process.Close();
-            }
-            catch (IOException ex)
-            {
-                MessageBox.Show("Error , unable to Restore!");
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    using (MySqlBackup mb = new MySqlBackup(cmd))
+                    {
+                        cmd.Connection = conn;
+                        conn.Open();
+                        mb.ImportFromFile(file);
+                        conn.Close();
+                    }
+                }
             }
         }
 

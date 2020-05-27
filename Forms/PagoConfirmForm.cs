@@ -73,6 +73,7 @@ namespace CinemaPIM.Forms
                 pagamentoDB.newPagamentoUseCard(newPagamento);
                 orderDB.newOrder(newOrder);
                 newCarrinho.IngresosSelec.ForEach((x) => {
+
                     ingressoDB.newIngresso(x, newOrder, Session.Horario);
                     
                 });

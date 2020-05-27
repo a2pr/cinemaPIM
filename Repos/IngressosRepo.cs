@@ -14,6 +14,7 @@ namespace CinemaPIM.Repos
 
         }
 
+
         public void newIngresso(Ingressos ingresso, order newOrder, string horario )
         {
             FilmesRepo filmesDb = new FilmesRepo();
@@ -26,11 +27,11 @@ namespace CinemaPIM.Repos
 
 
 
-            string query = "INSERT INTO `ingressos`(`id`, `filme_id`, `cinema_id`, `id_cadeira_id`, `id_order_id`, `horario`, `valor`) " +
-                "VALUES ("+id+","+filmeId+","+cinemaId+","+ cadeiraId + ","+ orderId + ",'"+ horario + "',"+ingresso.Valor+")";
-
+            string query = "INSERT INTO `ingressos`(`id`, `cinema_id`, `id_cadeira_id`, `id_order_id`, `horario`, `valor`) " +
+                "VALUES ("+id+","+cinemaId+","+ cadeiraId + ","+ orderId + ",'"+ horario + "',"+ingresso.Valor+")";
+            string query2 = "INSERT INTO `ingressos_filme`(`ingressos_id`, `filme_id`) VALUES (" + id + ","+filmeId+")";
             Insert(query);
-
+            Insert(query2);
         }
     }
 }
