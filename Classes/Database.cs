@@ -27,15 +27,22 @@ namespace CinemaPIM.Classes
 
         protected void Initialize()
         {
+            
             server = "localhost";
             database = "CinemasPIM";
-            uid = "a2pr";
-            password = "123456";
-            string connectionString;
-            connectionString = "SERVER=" + server + ";" + "DATABASE=" +
-            database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
-
-            connection = new MySqlConnection(connectionString);
+            uid = "pimUser";
+            password = "unip2020";
+            var con = new MySqlConnectionStringBuilder
+            {
+                Server = server,
+                Database = database,
+                UserID = uid,
+                Password = password,
+                ConnectionTimeout = 60,
+                AllowZeroDateTime = true
+            };
+            MessageBox.Show(con.ConnectionString);
+            connection = new MySqlConnection(con.ConnectionString);
         }
         //open connection to database
         protected bool OpenConnection()
