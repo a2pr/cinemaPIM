@@ -34,6 +34,23 @@ INSERT INTO `cinemas` (`id`, `id_endereco_id`, `nome`) VALUES
 (3, 5, 'Millennium Shopping'),
 (4, 6, 'Sumaúma Park Shopping');
 
+INSERT INTO `sala` (`id`, `id_cinema_id`, `horarios`) VALUES
+(1, 1, '1:00-3:00'),
+(2, 1, '3:30-5:30'),
+(3, 1, '7:00-9:00'),
+(4, 1, '9:30-11:30'),
+(5, 2, '1:00-3:00'),
+(6, 2, '3:30-5:30'),
+(7, 2, '7:00-9:00'),
+(8, 2, '9:30-11:30'),
+(9, 3, '1:00-3:00'),
+(10, 3, '3:30-5:30'),
+(11, 3, '7:00-9:00'),
+(12, 3, '9:30-11:30'),
+(13, 4, '1:00-3:00'),
+(16, 4, '3:30-5:30'),
+(17, 4, '7:00-9:00'),
+(18, 4, '9:30-11:30');
 
 INSERT INTO `filme` (`id`, `cinemas_id`, `titulo`, `categorias`, `duration`, `ano_estreia`, `rating`) VALUES
 (1, 1, 'Mulan', 'Aventuras, drama, acción y cine bélico', '1 hora y media', 2020, 3),
