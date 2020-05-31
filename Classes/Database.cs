@@ -30,8 +30,8 @@ namespace CinemaPIM.Classes
             
             server = "localhost";
             database = "CinemasPIM";
-            uid = "a2pr";
-            password = "123456";
+            uid = "pimUser";
+            password = "unip2020";
             var con = new MySqlConnectionStringBuilder
             {
                 Server = server,

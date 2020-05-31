@@ -56,13 +56,22 @@ namespace CinemaPIM.Forms
 
         private void RegisterToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            registerForm registerForm = new registerForm();
+            registerForm.Show();
+            this.Hide();
         }
 
         private void ContatoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             falaconosco conosco = new falaconosco();
             conosco.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FilmesForm filmesForm = new FilmesForm();
+            filmesForm.Show();
             this.Hide();
         }
     }

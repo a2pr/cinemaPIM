@@ -46,7 +46,6 @@ D:\Documents\Projects\CinemaPIM\bin\Release\System.Text.Encodings.Web.xml
 D:\Documents\Projects\CinemaPIM\bin\Release\System.Text.Json.xml
 D:\Documents\Projects\CinemaPIM\bin\Release\System.Threading.Tasks.Extensions.xml
 D:\Documents\Projects\CinemaPIM\bin\Release\System.ValueTuple.xml
-D:\Documents\Projects\CinemaPIM\obj\Release\CinemaPIM.csprojAssemblyReference.cache
 D:\Documents\Projects\CinemaPIM\obj\Release\CinemaPIM.Forms.Admin.gerarRelatorios.resources
 D:\Documents\Projects\CinemaPIM\obj\Release\CinemaPIM.blockDados.resources
 D:\Documents\Projects\CinemaPIM\obj\Release\CinemaPIM.Forms.CinemasForm.resources

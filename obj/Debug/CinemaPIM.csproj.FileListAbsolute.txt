@@ -1,7 +1,6 @@
 D:\Documents\Projects\CinemaPIM\bin\Debug\CinemaPIM.exe.config
 D:\Documents\Projects\CinemaPIM\bin\Debug\CinemaPIM.exe
 D:\Documents\Projects\CinemaPIM\bin\Debug\CinemaPIM.pdb
-D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.csprojAssemblyReference.cache
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.Home.resources
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Login.resources
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Properties.Resources.resources

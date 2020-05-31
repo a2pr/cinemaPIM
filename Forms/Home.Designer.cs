@@ -33,13 +33,13 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cinemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ContatoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RegisterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.result = new System.Windows.Forms.Label();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ContatoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -73,6 +73,22 @@
             this.cinemaToolStripMenuItem.Size = new System.Drawing.Size(94, 32);
             this.cinemaToolStripMenuItem.Text = "Cinema";
             this.cinemaToolStripMenuItem.Click += new System.EventHandler(this.cinemaToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(84, 32);
+            this.toolStripMenuItem1.Text = "Filmes";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // ContatoToolStripMenuItem
+            // 
+            this.ContatoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.ContatoToolStripMenuItem.Name = "ContatoToolStripMenuItem";
+            this.ContatoToolStripMenuItem.Size = new System.Drawing.Size(99, 32);
+            this.ContatoToolStripMenuItem.Text = "Contato";
+            this.ContatoToolStripMenuItem.Click += new System.EventHandler(this.ContatoToolStripMenuItem_Click);
             // 
             // RegisterToolStripMenuItem
             // 
@@ -121,21 +137,6 @@
             this.result.TabIndex = 4;
             this.result.Text = resources.GetString("result.Text");
             this.result.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(84, 32);
-            this.toolStripMenuItem1.Text = "Filmes";
-            // 
-            // ContatoToolStripMenuItem
-            // 
-            this.ContatoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.ContatoToolStripMenuItem.Name = "ContatoToolStripMenuItem";
-            this.ContatoToolStripMenuItem.Size = new System.Drawing.Size(99, 32);
-            this.ContatoToolStripMenuItem.Text = "Contato";
-            this.ContatoToolStripMenuItem.Click += new System.EventHandler(this.ContatoToolStripMenuItem_Click);
             // 
             // Home
             // 
