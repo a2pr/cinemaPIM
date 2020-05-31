@@ -1,4 +1,5 @@
 ﻿using CinemaPIM.Classes;
+using CinemaPIM.Forms.Admin;
 using CinemaPIM.Repos;
 using System;
 using System.Collections.Generic;
@@ -75,6 +76,13 @@ namespace CinemaPIM.Forms
         private void button7_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource = adminDB.getPIMCoin();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            gerarRelatorios Rela = new gerarRelatorios();
+            this.Hide();
+            Rela.Show();
         }
     }
 }

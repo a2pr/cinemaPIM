@@ -117,3 +117,4 @@ D:\Documents\Projects\CinemaPIM\bin\Debug\HtmlAgilityPack.xml
 D:\Documents\Projects\CinemaPIM\bin\Debug\IronPdf.xml
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.Admin.gerarRelatorios.resources
 D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.registerForm.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.csprojAssemblyReference.cache
