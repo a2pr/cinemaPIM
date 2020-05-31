@@ -115,5 +115,29 @@ namespace CinemaPIM.Forms
             }
             nextStep();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string targetURL = @"https://www.google.com/maps/search/" + cinemasDisp[0].Nome;
+            System.Diagnostics.Process.Start(targetURL);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string targetURL = @"https://www.google.com/maps/search/" + cinemasDisp[1].Nome;
+            System.Diagnostics.Process.Start(targetURL);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string targetURL = @"https://www.google.com/maps/search/" + cinemasDisp[2].Nome;
+            System.Diagnostics.Process.Start(targetURL);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string targetURL = @"https://www.google.com/maps/search/" + cinemasDisp[3].Nome;
+            System.Diagnostics.Process.Start(targetURL);
+        }
     }
 }
