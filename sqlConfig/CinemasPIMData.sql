@@ -20,12 +20,12 @@ INSERT INTO `endereco` (`id`, `rua`, `cidade`, `estado`, `cpe`) VALUES
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `password`, `admin`) VALUES
 (1, 'Andres', 'a2payema@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', NULL),
 (2, 'Diego', 'diegopayema@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', NULL),
-(3, 'Andres', 'andresp@dev.com', '670b14728ad9902aecba32e22fa4f6bd', 1)
+(3, 'Andres', 'andresp@dev.com', '670b14728ad9902aecba32e22fa4f6bd', 1);
 
 
 INSERT INTO `clientes` (`id`, `endereco_id`, `cpf`, `telefone`, `use_card`, `use_pimcoin`, `id_usuario_id`) VALUES
 (2, 2, '70966225-025', '92984240045', null, NULL, 1),
-(3, 7, '123456789-22', '9298456632', NULL, null, 2)
+(3, 7, '123456789-22', '9298456632', NULL, null, 2);
 
 
 INSERT INTO `cinemas` (`id`, `id_endereco_id`, `nome`) VALUES
