@@ -53,5 +53,17 @@ namespace CinemaPIM.Forms
             filmesForm.Show();
             this.Hide();
         }
+
+        private void RegisterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ContatoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            falaconosco conosco = new falaconosco();
+            conosco.Show();
+            this.Hide();
+        }
     }
 }

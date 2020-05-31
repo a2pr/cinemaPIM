@@ -33,11 +33,13 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cinemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.filmesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.RegisterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.result = new System.Windows.Forms.Label();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ContatoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +49,9 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.loginToolStripMenuItem,
             this.cinemaToolStripMenuItem,
-            this.filmesToolStripMenuItem});
+            this.toolStripMenuItem1,
+            this.ContatoToolStripMenuItem,
+            this.RegisterToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 36);
@@ -70,13 +74,13 @@
             this.cinemaToolStripMenuItem.Text = "Cinema";
             this.cinemaToolStripMenuItem.Click += new System.EventHandler(this.cinemaToolStripMenuItem_Click);
             // 
-            // filmesToolStripMenuItem
+            // RegisterToolStripMenuItem
             // 
-            this.filmesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.filmesToolStripMenuItem.Name = "filmesToolStripMenuItem";
-            this.filmesToolStripMenuItem.Size = new System.Drawing.Size(84, 32);
-            this.filmesToolStripMenuItem.Text = "Filmes";
-            this.filmesToolStripMenuItem.Click += new System.EventHandler(this.filmesToolStripMenuItem_Click);
+            this.RegisterToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.RegisterToolStripMenuItem.Name = "RegisterToolStripMenuItem";
+            this.RegisterToolStripMenuItem.Size = new System.Drawing.Size(102, 32);
+            this.RegisterToolStripMenuItem.Text = "Register";
+            this.RegisterToolStripMenuItem.Click += new System.EventHandler(this.RegisterToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 
@@ -118,6 +122,21 @@
             this.result.Text = resources.GetString("result.Text");
             this.result.Click += new System.EventHandler(this.label2_Click);
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(84, 32);
+            this.toolStripMenuItem1.Text = "Filmes";
+            // 
+            // ContatoToolStripMenuItem
+            // 
+            this.ContatoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.ContatoToolStripMenuItem.Name = "ContatoToolStripMenuItem";
+            this.ContatoToolStripMenuItem.Size = new System.Drawing.Size(99, 32);
+            this.ContatoToolStripMenuItem.Text = "Contato";
+            this.ContatoToolStripMenuItem.Click += new System.EventHandler(this.ContatoToolStripMenuItem_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -130,7 +149,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Home";
-            this.Text = "Home";
+            this.Text = "Contato";
             this.Load += new System.EventHandler(this.Home_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -145,10 +164,12 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cinemaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem filmesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem RegisterToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label result;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ContatoToolStripMenuItem;
     }
 }

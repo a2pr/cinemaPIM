@@ -110,3 +110,11 @@ D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.adminDashboard.resourc
 D:\Documents\Projects\CinemaPIM\bin\Debug\MySqlBackup.dll
 D:\Documents\Projects\CinemaPIM\bin\Debug\System.Data.SqlClient.dll
 D:\Documents\Projects\CinemaPIM\bin\Debug\System.Data.SqlClient.xml
+D:\Documents\Projects\CinemaPIM\bin\Debug\HtmlAgilityPack.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\IronPdf.Assets.Rendering.Windows.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\IronPdf.dll
+D:\Documents\Projects\CinemaPIM\bin\Debug\HtmlAgilityPack.pdb
+D:\Documents\Projects\CinemaPIM\bin\Debug\HtmlAgilityPack.xml
+D:\Documents\Projects\CinemaPIM\bin\Debug\IronPdf.xml
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.Admin.gerarRelatorios.resources
+D:\Documents\Projects\CinemaPIM\obj\Debug\CinemaPIM.Forms.registerForm.resources

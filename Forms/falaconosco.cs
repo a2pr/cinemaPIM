@@ -16,5 +16,13 @@ namespace CinemaPIM.Forms
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Home homeW = new Home();
+            this.Hide();
+            homeW.Show();
+
+        }
     }
 }

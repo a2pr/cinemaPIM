@@ -1,4 +1,5 @@
 ﻿using CinemaPIM.Forms;
+using CinemaPIM.Forms.Admin;
 using System;
 using System.Collections.Generic;
 using System.Linq;

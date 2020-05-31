@@ -30,7 +30,6 @@ namespace CinemaPIM.Classes
         }
         public Ingressos(string selectHorario, string selecFilme, string selecCinema, cadeira selecCadeira)
         {
-            id = rnd.Next(1, 10000);
             horario = selectHorario;
             filme = selecFilme;
             cinema = selecCinema;

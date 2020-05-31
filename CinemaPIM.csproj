@@ -54,6 +54,15 @@
     <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.11.23.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>packages\HtmlAgilityPack.1.11.23\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPdf, Version=2020.3.2.0, Culture=neutral, PublicKeyToken=94e1c31412563c75, processorArchitecture=MSIL">
+      <HintPath>packages\IronPdf.2020.3.2\lib\net40\IronPdf.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPdf.Assets.Rendering.Windows, Version=18.0.0.0, Culture=neutral, PublicKeyToken=94e1c31412563c75, processorArchitecture=MSIL">
+      <HintPath>packages\Iron.Assets.Rendering.Windows.18.0.1\lib\net40\IronPdf.Assets.Rendering.Windows.dll</HintPath>
+    </Reference>
     <Reference Include="K4os.Compression.LZ4, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
       <HintPath>packages\K4os.Compression.LZ4.1.1.11\lib\net46\K4os.Compression.LZ4.dll</HintPath>
     </Reference>
@@ -115,6 +124,7 @@
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -147,6 +157,12 @@
     <Compile Include="Classes\order.cs" />
     <Compile Include="Classes\Salas.cs" />
     <Compile Include="Classes\Session.cs" />
+    <Compile Include="Forms\Admin\gerarRelatorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\gerarRelatorios.Designer.cs">
+      <DependentUpon>gerarRelatorios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\blockDados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,6 +211,12 @@
     <Compile Include="Forms\PagoConfirmForm.designer.cs">
       <DependentUpon>PagoConfirmForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\registerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\registerForm.Designer.cs">
+      <DependentUpon>registerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SalaForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,12 +255,19 @@
     <Compile Include="Repos\CadeirasRepo.cs" />
     <Compile Include="Repos\CardRepo.cs" />
     <Compile Include="Repos\CinemasRepo.cs" />
+    <Compile Include="Repos\EnderecoRepo.cs" />
+    <Compile Include="Repos\UsuariosRepo.cs" />
     <Compile Include="Repos\ClienteRepo.cs" />
     <Compile Include="Repos\FilmesRepo.cs" />
     <Compile Include="Repos\IngressosRepo.cs" />
     <Compile Include="Repos\LoginRepo.cs" />
     <Compile Include="Repos\OrderRepo.cs" />
     <Compile Include="Repos\PagamentoRepo.cs" />
+    <Compile Include="utilities\pdfCreate.cs" />
+    <Compile Include="utilities\htmlCreate.cs" />
+    <EmbeddedResource Include="Forms\Admin\gerarRelatorios.resx">
+      <DependentUpon>gerarRelatorios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\blockDados.resx">
       <DependentUpon>blockDados.cs</DependentUpon>
     </EmbeddedResource>
@@ -262,6 +291,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PagoConfirmForm.resx">
       <DependentUpon>PagoConfirmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\registerForm.resx">
+      <DependentUpon>registerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SalaForm.resx">
       <DependentUpon>SalaForm.cs</DependentUpon>
@@ -347,5 +379,6 @@
   <ItemGroup>
     <None Include="Resources\sumaUma.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

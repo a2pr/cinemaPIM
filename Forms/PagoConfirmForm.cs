@@ -18,10 +18,12 @@ namespace CinemaPIM.Forms
         private CadeirasRepo cadeiraDB;
         private OrderRepo orderDB;
         private IngressosRepo ingressoDB;
+        private UsuariosRepo usuariosDB;
         public PagoConfirmForm()
         {
             InitializeComponent();
-            textBox1.Text = Session.GetClientes().GetNome();
+            usuariosDB = new UsuariosRepo(); 
+            textBox1.Text =usuariosDB.getUserName( Session.GetClientes().getUsuarioId());
             textBox2.Text = Session.GetFilme().Titulo;
             textBox3.Text = Session.GetCinema().Nome;
             textBox4.Text = Session.Horario;

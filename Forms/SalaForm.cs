@@ -921,16 +921,18 @@ namespace CinemaPIM.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             List<Ingressos> ing = new List<Ingressos>();
+            int i = 1;
             cadeiras.ForEach(x =>
             {
                 Random rnd = new Random();
                 if (x != null)
                 {
                     Ingressos newIngressos = new Ingressos(horarioSelec, filmeTitulo, cinemaNome, x);
-                    newIngressos.Id = rnd.Next(1, 10000);
+                    newIngressos.Id = rnd.Next(1*i, 10*i);
                     ing.Add(newIngressos);
                 }
                 rnd = null;
+                i += 10;
             });
 
             Session.SetCarrinho();

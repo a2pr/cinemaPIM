@@ -8,49 +8,24 @@ namespace CinemaPIM.Classes
 {
     class Enderecos
     {
+		private int id;
 		private string rua;
 		private string cidade;
 		private string estado;
 		private string CPE;
 
-
-		public void SetRua(string rua)
+		public Enderecos(string rua, string cidade, string estado, string cPE)
 		{
 			this.rua = rua;
-
-		}
-		public void SetCidade(string cidade)
-		{
 			this.cidade = cidade;
-
-		}
-		public void SetEstado(string estado)
-		{
 			this.estado = estado;
-
-		}
-		public void SetCPE(string cpe)
-		{
-			this.CPE = cpe;
-
+			this.CPE = cPE;
 		}
 
-		//public int GetRua()
-		//{
-		//	return this.rua;
-		//}
-
-		//public int GetCidade()
-		//{
-		//	return this.cidade;
-		//}
-		//public int GetEstado()
-		//{
-		//	return this.estado;
-		//}
-		//public int GetCPE()
-		//{
-		//	return this.CPE;
-		//}
+		public string Rua { get => rua; set => rua = value; }
+		public string Cidade { get => cidade; set => cidade = value; }
+		public string Estado { get => estado; set => estado = value; }
+		public string CPE1 { get => CPE; set => CPE = value; }
+		public int Id { get => id; set => id = value; }
 	}
 }

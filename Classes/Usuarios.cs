@@ -12,15 +12,7 @@ namespace CinemaPIM.Classes
         private string nome;
         private string senha;
         private string email;
-        Enderecos endereco = new Enderecos();
-        private int telefone;
-        private string CPF;
-
-        public int GetId(int id)
-        {
-            return this.id;
-
-        }
+        
         public void SetId(int id)
         {
             this.id = id;
@@ -38,34 +30,19 @@ namespace CinemaPIM.Classes
             this.senha = senha;
 
         }
-        public string getSenha()
-        {
-            return senha;
-        }
-
         public void SetEmail(string email)
         {
             this.email = email;
 
         }
 
-        public void SetTelefone(int telefone)
+        public string getSenha()
         {
-            this.telefone = telefone;
-
+            return senha;
         }
-
-
-        /*public void SetEndereco(string endereco)
+        public string getEmail()
         {
-            this.endereco = endereco;
-
-        }*/
-
-        public void SetCPF(string CPF)
-        {
-            this.CPF = CPF;
-
+            return email;
         }
 
         public string GetNome()
@@ -78,24 +55,6 @@ namespace CinemaPIM.Classes
             return this.id;
         }
 
-        public string GetEmail()
-        {
-            return this.email;
-        }
 
-        public int GetTelefone()
-        {
-            return this.telefone;
-        }
-
-        //public string GetEndereco()
-        //{
-        //    return this.endereco;
-        //}
-
-        public string GetCpf()
-        {
-            return this.CPF;
-        }
     }
 }

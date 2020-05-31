@@ -1,4 +1,5 @@
 ﻿using CinemaPIM.Classes;
+using CinemaPIM.utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +14,7 @@ namespace CinemaPIM.Forms
 {
     public partial class paymentConfirmationMessage : Form
     {
-
+        private pdfCreate pdfBuilder;
         public paymentConfirmationMessage()
         {
             InitializeComponent();
@@ -21,7 +22,8 @@ namespace CinemaPIM.Forms
 
         private void mensagem_Load(object sender, EventArgs e)
         {
-
+            pdfBuilder = new pdfCreate();
+            pdfBuilder.createInvoice(Session.getCarrinho().IngresosSelec);
         }
 
         private void button1_Click(object sender, EventArgs e)
