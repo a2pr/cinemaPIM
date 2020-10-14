@@ -1,4 +1,5 @@
 ﻿using CinemaPIM.Classes;
+using CinemaPIM.Repos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,10 +16,13 @@ namespace CinemaPIM.Forms
     {
         private List<cadeira> cadeiras = new List<cadeira>();
 
+        private IngressosRepo ingressoDB;
+        private CadeirasRepo cadeirasDB;
         private int idSala;
         private string cinemaNome;
         private string horarioSelec;
         private string filmeTitulo;
+        private int numberOfCadeira= 1;
         public SalaForm()
         {
             InitializeComponent();
@@ -29,12 +33,16 @@ namespace CinemaPIM.Forms
             Salas currentSala = new Salas(idSala, Cinema.Id);
             filmeTitulo = Session.GetFilme().Titulo;
             horarioSelec = Session.Horario;
+            ingressoDB = new IngressosRepo();
+            cadeirasDB = new CadeirasRepo();
         }
 
         private void setCadeira(string linha, int columna)
         {
             cadeira newCadeira = new cadeira(linha,columna, idSala);
+            newCadeira.Id = cadeirasDB.lastCadeira() + this.numberOfCadeira;
             cadeiras.Add(newCadeira);
+            this.numberOfCadeira++;
             MessageBox.Show("escolhida cadeira " + linha+ Convert.ToString(columna));
         }
         private void label4_Click(object sender, EventArgs e)
@@ -924,15 +932,13 @@ namespace CinemaPIM.Forms
             int i = 1;
             cadeiras.ForEach(x =>
             {
-                Random rnd = new Random();
                 if (x != null)
                 {
                     Ingressos newIngressos = new Ingressos(horarioSelec, filmeTitulo, cinemaNome, x);
-                    newIngressos.Id = rnd.Next(1*i, 10*i);
+                    newIngressos.Id = ingressoDB.lastIngreso() + i;
                     ing.Add(newIngressos);
                 }
-                rnd = null;
-                i += 10;
+                i ++;
             });
 
             Session.SetCarrinho();

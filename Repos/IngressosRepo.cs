@@ -33,5 +33,20 @@ namespace CinemaPIM.Repos
             Insert(query);
             Insert(query2);
         }
+
+        public int lastIngreso()
+        {
+            int id;
+            string query = "SELECT MAX(id) FROM `ingressos`";
+
+            id = Count(query);
+            
+            if (id==0)
+            {
+                return 1;
+            }
+
+            return id;
+        }
     }
 }

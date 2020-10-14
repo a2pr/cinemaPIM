@@ -27,21 +27,46 @@ namespace CinemaPIM.Classes
 
         protected void Initialize()
         {
-            
-            server = "localhost";
-            database = "CinemasPIM";
-            uid = "a2pr";
-            password = "123456";
-            var con = new MySqlConnectionStringBuilder
+            if (Environment.GetEnvironmentVariable("dbLocation")=="Production")
             {
-                Server = server,
-                Database = database,
-                UserID = uid,
-                Password = password,
-                ConnectionTimeout = 60,
-                AllowZeroDateTime = true
-            };
-            connection = new MySqlConnection(con.ConnectionString);
+                server = "unip-andres.mysql.database.windows.net";
+                database = "test_unip";
+                uid = "=unip-andres@unip-andres";
+                password = "a2DAD1995";
+                
+                var con = new MySqlConnectionStringBuilder
+                {
+                    Server = server,
+                    Database = database,
+                    UserID = uid,
+                    Password = password,
+                    Port = 1433,
+                    SslMode = MySqlSslMode.Required
+                };
+                connection = new MySqlConnection(con.ConnectionString);
+            }
+            else
+            {
+                server = "localhost";
+                database = "CinemasPIM";
+                uid = "a2pr";
+                password = "123456";
+
+                var con = new MySqlConnectionStringBuilder
+                {
+                    Server = server,
+                    Database = database,
+                    UserID = uid,
+                    Password = password,
+                    ConnectionTimeout = 60,
+                    AllowZeroDateTime = true
+                };
+                
+               connection = new MySqlConnection(con.ConnectionString);
+            }
+            
+            
+            
         }
         //open connection to database
         protected bool OpenConnection()

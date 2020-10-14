@@ -16,6 +16,7 @@ namespace CinemaPIM
         [STAThread]
         static void Main()
         {
+            Environment.SetEnvironmentVariable("dbLocation", "Debug");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Home());

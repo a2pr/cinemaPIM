@@ -28,5 +28,19 @@ namespace CinemaPIM.Repos
             Insert(query);
         }
 
+        public int lastCadeira()
+        {
+            int id;
+            string query = "SELECT MAX(id) FROM `cadeiras`";
+
+            id = Count(query);
+
+            if (id==0)
+            {
+                return 1;
+            }
+            return id;
+        }
+
     }
 }
