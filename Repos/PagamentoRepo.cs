@@ -30,5 +30,20 @@ namespace CinemaPIM.Repos
             string query = "INSERT INTO `pagamento`(`id`,`id_cliente_id`, `use_card`, `valor`) VALUES (" + id + "," + idCliente + ", 1 ,"+ valor + ");";
             Insert(query);
         }
+
+        public int lastPagamento()
+        {
+            int id;
+            string query = "SELECT MAX(id) FROM `pagamento`";
+
+            id = Count(query);
+
+            if (id == 0)
+            {
+                return 1;
+            }
+
+            return id;
+        }
     }
 }

@@ -17,17 +17,7 @@ namespace CinemaPIM.Classes
         private int cadeiraSelec;
         private float valor;
         private cadeira CadeiraSelect;
-        private Random rnd = new Random();
 
-        public Ingressos( string selectHorario, string selecFilme, string selecCinema, int idCadeira)
-        {
-            id = rnd.Next(1,10000);
-            horario = selectHorario;
-            filme = selecFilme;
-            cinema = selecCinema;
-            cadeiraSelec = idCadeira;
-            this.valor=  15;
-        }
         public Ingressos(string selectHorario, string selecFilme, string selecCinema, cadeira selecCadeira)
         {
             horario = selectHorario;

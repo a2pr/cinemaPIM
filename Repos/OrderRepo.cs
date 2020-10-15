@@ -46,5 +46,20 @@ namespace CinemaPIM.Repos
 
             return data;
         }
+
+        public int lastOrder()
+        {
+            int id;
+            string query = "SELECT MAX(id) FROM `order`";
+
+            id = Count(query);
+
+            if (id == 0)
+            {
+                return 1;
+            }
+
+            return id;
+        }
     }
 }

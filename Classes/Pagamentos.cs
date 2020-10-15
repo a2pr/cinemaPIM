@@ -15,14 +15,12 @@ namespace CinemaPIM.Classes
 
         public Pagamentos( Clientes cliente, float valor)
         {
-            Random rnd = new Random();
-            this.id = rnd.Next(10000, 11000);
             this.cliente = cliente;
             this.valor = valor;
         }
 
 
-
+        public int Id { get => id; set => id = value; }
         public float Valor { get => valor; set => valor = value; }
 
         public Clientes getCliente()

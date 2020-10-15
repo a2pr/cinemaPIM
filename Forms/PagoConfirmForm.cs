@@ -53,7 +53,7 @@ namespace CinemaPIM.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             Pagamentos newPagamento = new Pagamentos(Session.GetClientes(), Session.getCarrinho().IngresosSelec.Count() * 15);
-
+            newPagamento.Id =  pagamentoDB.lastPagamento() + 1;
             newOrderForClient(Session.getCarrinho(), newPagamento);
 
             paymentConfirmationMessage msg = new paymentConfirmationMessage();
@@ -64,6 +64,8 @@ namespace CinemaPIM.Forms
         private void newOrderForClient(carrinho newCarrinho, Pagamentos newPagamento)
         {
             order newOrder = new order(newPagamento.getId(), newPagamento.getCliente().IdUsuario);
+            newOrder.setId( orderDB.lastOrder() + 1);
+
             if (Session.GetClientes().UseCard)
             {
                 newCarrinho.IngresosSelec.ForEach((x) =>

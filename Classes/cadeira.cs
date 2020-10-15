@@ -14,10 +14,6 @@ namespace CinemaPIM.Classes
         private int sala;
         public cadeira(string l, int c, int s)
         {
-            /**
-            Random rnd = new Random();
-            id = rnd.Next(5000,7000 );
-            **/
             linha = l;
             columna = c;
             sala = s;
