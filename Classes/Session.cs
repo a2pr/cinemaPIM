@@ -14,12 +14,31 @@ namespace CinemaPIM.Classes
         private static Filmes filme;
         private static string horario;
         private static carrinho carrinho;
-
+        private static order order;
         public static string Horario { get => horario; set => horario = value; }
 
+        public static bool signIn()
+        {
+            if (cliente !=null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static void setOrder(order value) {
+            order = value;
+        }
         public static void setCliente(Clientes newCLiente)
         {
             cliente = newCLiente;
+        }
+
+        public static order getOrder()
+        {
+            return order;
         }
         public static void setClienteByDB(Clientes dbCLient)
         {
@@ -78,6 +97,7 @@ namespace CinemaPIM.Classes
             filme = null;
             horario = null;
             carrinho = null;
-    }
+            order = null;
+        }
     }
 }

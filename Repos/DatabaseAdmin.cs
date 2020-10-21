@@ -27,7 +27,7 @@ namespace CinemaPIM.Classes
             string query = "SELECT o.id, o.id_cliente_id as idCliente,  c.nome as Cinema, f.titulo as Filme, p.valor, " +
                "p.use_card as useCard, p.use_pimcoin as usePIMCoin  FROM `order` o inner Join  pagamento p on o.id_pagamento_id = p.id " +
                "inner join ingressos i ON i.id_order_id = o.id inner join cinemas c ON i.cinema_id = c.id inner join ingressos_filme ingf ON " +
-               "ingf.ingressos_id - i.id INNER join filme f ON f.id = ingf.filme_id";
+               "ingf.ingressos_id = i.id INNER join filme f ON f.id = ingf.filme_id";
 
             MySqlDataAdapter sql = new MySqlDataAdapter(query, base.connection);
 
@@ -43,7 +43,7 @@ namespace CinemaPIM.Classes
             string query = "SELECT o.id, o.id_cliente_id as idCliente,  c.nome as Cinema, f.titulo as Filme, p.valor, " +
                "p.use_card as useCard, p.use_pimcoin as usePIMCoin  FROM `order` o inner Join  pagamento p on o.id_pagamento_id = p.id " +
                "inner join ingressos i ON i.id_order_id = o.id inner join cinemas c ON i.cinema_id = c.id inner join ingressos_filme ingf ON " +
-               "ingf.ingressos_id - i.id INNER join filme f ON f.id = ingf.filme_id";
+               "ingf.ingressos_id = i.id INNER join filme f ON f.id = ingf.filme_id";
 
 
             List<string> columnas = new List<string>();

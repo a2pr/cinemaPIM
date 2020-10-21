@@ -61,50 +61,58 @@
             // 
             // cinema1Btn
             // 
-            this.cinema1Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cinema1Btn.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.cinema1Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cinema1Btn.ForeColor = System.Drawing.Color.White;
             this.cinema1Btn.Location = new System.Drawing.Point(108, 211);
             this.cinema1Btn.MinimumSize = new System.Drawing.Size(200, 10);
             this.cinema1Btn.Name = "cinema1Btn";
-            this.cinema1Btn.Size = new System.Drawing.Size(200, 30);
+            this.cinema1Btn.Size = new System.Drawing.Size(200, 50);
             this.cinema1Btn.TabIndex = 5;
             this.cinema1Btn.Text = "cinema1";
-            this.cinema1Btn.UseVisualStyleBackColor = true;
+            this.cinema1Btn.UseVisualStyleBackColor = false;
             this.cinema1Btn.Click += new System.EventHandler(this.cinema1Btn_Click);
             // 
             // cinema2Btn
             // 
-            this.cinema2Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cinema2Btn.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.cinema2Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cinema2Btn.ForeColor = System.Drawing.Color.White;
             this.cinema2Btn.Location = new System.Drawing.Point(459, 211);
             this.cinema2Btn.MinimumSize = new System.Drawing.Size(200, 10);
             this.cinema2Btn.Name = "cinema2Btn";
-            this.cinema2Btn.Size = new System.Drawing.Size(200, 30);
+            this.cinema2Btn.Size = new System.Drawing.Size(200, 50);
             this.cinema2Btn.TabIndex = 5;
             this.cinema2Btn.Text = "cinema2";
-            this.cinema2Btn.UseVisualStyleBackColor = true;
+            this.cinema2Btn.UseVisualStyleBackColor = false;
             this.cinema2Btn.Click += new System.EventHandler(this.cinema2Btn_Click);
             // 
             // cinema4Btn
             // 
-            this.cinema4Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cinema4Btn.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.cinema4Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cinema4Btn.ForeColor = System.Drawing.Color.White;
             this.cinema4Btn.Location = new System.Drawing.Point(459, 498);
             this.cinema4Btn.MinimumSize = new System.Drawing.Size(200, 10);
             this.cinema4Btn.Name = "cinema4Btn";
-            this.cinema4Btn.Size = new System.Drawing.Size(200, 30);
+            this.cinema4Btn.Size = new System.Drawing.Size(200, 50);
             this.cinema4Btn.TabIndex = 5;
             this.cinema4Btn.Text = "cinema4";
-            this.cinema4Btn.UseVisualStyleBackColor = true;
+            this.cinema4Btn.UseVisualStyleBackColor = false;
             this.cinema4Btn.Click += new System.EventHandler(this.cinema4Btn_Click);
             // 
             // cinema3Btn
             // 
-            this.cinema3Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cinema3Btn.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.cinema3Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cinema3Btn.ForeColor = System.Drawing.Color.White;
             this.cinema3Btn.Location = new System.Drawing.Point(108, 498);
             this.cinema3Btn.MinimumSize = new System.Drawing.Size(200, 10);
             this.cinema3Btn.Name = "cinema3Btn";
-            this.cinema3Btn.Size = new System.Drawing.Size(200, 30);
+            this.cinema3Btn.Size = new System.Drawing.Size(200, 50);
             this.cinema3Btn.TabIndex = 5;
             this.cinema3Btn.Text = "cinema3";
-            this.cinema3Btn.UseVisualStyleBackColor = true;
+            this.cinema3Btn.UseVisualStyleBackColor = false;
             this.cinema3Btn.Click += new System.EventHandler(this.cinema3Btn_Click);
             // 
             // cinema4
@@ -150,58 +158,66 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(108, 264);
             this.button1.MinimumSize = new System.Drawing.Size(200, 10);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 30);
+            this.button1.Size = new System.Drawing.Size(200, 50);
             this.button1.TabIndex = 6;
             this.button1.Text = "Google Maps";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(459, 264);
             this.button2.MinimumSize = new System.Drawing.Size(200, 10);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 30);
+            this.button2.Size = new System.Drawing.Size(200, 50);
             this.button2.TabIndex = 7;
             this.button2.Text = "Google Maps";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(108, 555);
             this.button3.MinimumSize = new System.Drawing.Size(200, 10);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 30);
+            this.button3.Size = new System.Drawing.Size(200, 50);
             this.button3.TabIndex = 8;
             this.button3.Text = "Google Maps";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(459, 555);
             this.button4.MinimumSize = new System.Drawing.Size(200, 10);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 30);
+            this.button4.Size = new System.Drawing.Size(200, 50);
             this.button4.TabIndex = 9;
             this.button4.Text = "Google Maps";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // CinemasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(805, 621);
+            this.BackColor = System.Drawing.Color.DarkRed;
+            this.ClientSize = new System.Drawing.Size(881, 638);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

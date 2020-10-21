@@ -61,5 +61,10 @@ namespace CinemaPIM.Forms.Admin
             pdfBuilder = new pdfCreate();
             pdfBuilder.createReportALL(data);
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

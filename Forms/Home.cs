@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CinemaPIM.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace CinemaPIM.Forms
 {
     public partial class Home : Form
     {
+        private bool loginStatus;
         public Home()
         {
             InitializeComponent();
+            loginStatus = Session.signIn();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -37,6 +40,13 @@ namespace CinemaPIM.Forms
         private void Home_Load(object sender, EventArgs e)
         {
             pictureBox1.BackgroundImage = Properties.Resources.mulan;
+
+            if (loginStatus)
+            {
+                loginToolStripMenuItem.Visible = false;
+                RegisterToolStripMenuItem.Visible = false;
+            }
+            
         }
 
         private void cinemaToolStripMenuItem_Click(object sender, EventArgs e)

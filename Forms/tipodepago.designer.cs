@@ -42,11 +42,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(244, 50);
+            this.label1.Location = new System.Drawing.Point(145, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(303, 31);
+            this.label1.Size = new System.Drawing.Size(601, 63);
             this.label1.TabIndex = 0;
             this.label1.Text = "TIPO DE PAGAMENTO";
             // 
@@ -62,22 +62,25 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(450, 244);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(130, 48);
             this.button1.TabIndex = 17;
             this.button1.Text = "Select pago";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.checkBox1.Location = new System.Drawing.Point(310, 118);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(185, 29);
+            this.checkBox1.Size = new System.Drawing.Size(247, 35);
             this.checkBox1.TabIndex = 18;
             this.checkBox1.Text = "Cartão de Crédito";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -86,11 +89,11 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.checkBox2.Location = new System.Drawing.Point(310, 149);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(178, 29);
+            this.checkBox2.Size = new System.Drawing.Size(238, 35);
             this.checkBox2.TabIndex = 18;
             this.checkBox2.Text = "Cartão de Debito";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -99,11 +102,11 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.checkBox3.Location = new System.Drawing.Point(310, 184);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(112, 29);
+            this.checkBox3.Size = new System.Drawing.Size(144, 35);
             this.checkBox3.TabIndex = 18;
             this.checkBox3.Text = "PIM Coin";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -111,12 +114,15 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(310, 244);
+            this.button2.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Location = new System.Drawing.Point(278, 244);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(127, 48);
             this.button2.TabIndex = 17;
             this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // tipodepago

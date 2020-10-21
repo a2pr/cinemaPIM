@@ -23,7 +23,7 @@ namespace CinemaPIM.Forms
         private void mensagem_Load(object sender, EventArgs e)
         {
             pdfBuilder = new pdfCreate();
-            pdfBuilder.createInvoice(Session.getCarrinho().IngresosSelec);
+            pdfBuilder.createInvoice(Session.getCarrinho().IngresosSelec, Session.getOrder());
         }
 
         private void button1_Click(object sender, EventArgs e)

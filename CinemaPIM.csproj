@@ -149,6 +149,7 @@
     <Compile Include="Classes\Cinemas.cs" />
     <Compile Include="Classes\Clientes.cs" />
     <Compile Include="Classes\Database.cs" />
+    <Compile Include="Classes\PimCoinTrans.cs" />
     <Compile Include="Repos\DatabaseAdmin.cs" />
     <Compile Include="Classes\Enderecos.cs" />
     <Compile Include="Classes\Filmes.cs" />
@@ -256,6 +257,7 @@
     <Compile Include="Repos\CardRepo.cs" />
     <Compile Include="Repos\CinemasRepo.cs" />
     <Compile Include="Repos\EnderecoRepo.cs" />
+    <Compile Include="Repos\PimCoinTransRepo.cs" />
     <Compile Include="Repos\UsuariosRepo.cs" />
     <Compile Include="Repos\ClienteRepo.cs" />
     <Compile Include="Repos\FilmesRepo.cs" />

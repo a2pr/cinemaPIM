@@ -10,15 +10,15 @@ namespace CinemaPIM.utilities
 {
     class htmlCreate
     {
-        public string createInvoiceHTML(List<Ingressos> ingressos)
+        public string createInvoiceHTML(List<Ingressos> ingressos, order newOrder)
         {
             string html = @"<html>
                             <body>
-                                <h1>Tua fatura de venda</h1>
-                                <h3>Informação de ingressos:</h3>";
+                                <h1># Order:" + Convert.ToString(newOrder.getId()) + " Tua fatura de venda</h1>"
+                                + "<h3>Informação de ingressos:</h3>";
             html += getIngressoInfo(ingressos[0]);
             html += getIngressosID(ingressos);
-            html+= @"<p>Obrigado pela preferencia!</p>
+            html+= @"<h3>Obrigado pela preferencia!</h3>
                             </ body >
                         </ html >";
             string name = Convert.ToString(ingressos.Count()) + "-" + Session.getCarrinho().IdCliente;
@@ -91,12 +91,12 @@ namespace CinemaPIM.utilities
                                 <h1>Relatorio vendas ate o dia de hoje</h1>
                                 <table>
                                     <tr>
-                                        <th>Pagamento id: </th>
-                                        <th>Id Cliente</th> 
-                                        <th>Cinema</th> 
-                                        <th>Filme</th> 
-                                        <th>Valor</th>  
-                                        <th>Use Card</th>
+                                        <th>Pagamento id:       </th>
+                                        <th>Id Cliente      </th> 
+                                        <th>Cinema       </th> 
+                                        <th>Filme        </th> 
+                                        <th>Valor  </th>  
+                                        <th>Use Card  </th>
                                         <th>Use PIMCoin</th>
                                     </tr>";
             html += getAllTable(data);
@@ -162,11 +162,11 @@ namespace CinemaPIM.utilities
             float valorTotal= 0;
             ingressos.ForEach(x =>
             {
-                html += "<li> # de ingresso: "+ x.Id +"</li>";
+                html += "<li> # de ingresso: "+ x.Id +" | Cadeira, linha: "+ x.getCadeira().Linha +" columna: "+ x.getCadeira().Columna + "</li>";
                 valorTotal += x.Valor;
 
             });
-            html += "</ul> <p>"+ Convert.ToString(valorTotal) + "</p>";
+            html += "</ul> <p>Valor total de factura: "+ Convert.ToString(valorTotal) + " R$ </p>";
 
             return html;
         }

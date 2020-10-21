@@ -47,24 +47,25 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(340, 44);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(290, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 29);
+            this.label1.Size = new System.Drawing.Size(194, 63);
             this.label1.TabIndex = 0;
             this.label1.Text = "Filmes";
             // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "1:00-3:00",
             "3:30-5:30",
             "7:00-9:00",
             "9:30-11:30"});
-            this.comboBox1.Location = new System.Drawing.Point(689, 114);
+            this.comboBox1.Location = new System.Drawing.Point(650, 114);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(143, 21);
+            this.comboBox1.Size = new System.Drawing.Size(182, 33);
             this.comboBox1.TabIndex = 7;
             this.comboBox1.Text = "Escolhe horario";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
@@ -74,7 +75,7 @@
             this.filme6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.filme6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.filme6.Enabled = false;
-            this.filme6.Location = new System.Drawing.Point(539, 329);
+            this.filme6.Location = new System.Drawing.Point(482, 329);
             this.filme6.Name = "filme6";
             this.filme6.Size = new System.Drawing.Size(134, 161);
             this.filme6.TabIndex = 6;
@@ -86,7 +87,7 @@
             this.filme5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.filme5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.filme5.Enabled = false;
-            this.filme5.Location = new System.Drawing.Point(321, 329);
+            this.filme5.Location = new System.Drawing.Point(264, 329);
             this.filme5.Name = "filme5";
             this.filme5.Size = new System.Drawing.Size(134, 161);
             this.filme5.TabIndex = 5;
@@ -98,7 +99,7 @@
             this.filme4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.filme4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.filme4.Enabled = false;
-            this.filme4.Location = new System.Drawing.Point(99, 329);
+            this.filme4.Location = new System.Drawing.Point(46, 329);
             this.filme4.Name = "filme4";
             this.filme4.Size = new System.Drawing.Size(134, 161);
             this.filme4.TabIndex = 4;
@@ -110,7 +111,7 @@
             this.filme3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.filme3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.filme3.Enabled = false;
-            this.filme3.Location = new System.Drawing.Point(539, 100);
+            this.filme3.Location = new System.Drawing.Point(482, 100);
             this.filme3.Name = "filme3";
             this.filme3.Size = new System.Drawing.Size(134, 161);
             this.filme3.TabIndex = 3;
@@ -123,7 +124,7 @@
             this.filme2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.filme2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.filme2.Enabled = false;
-            this.filme2.Location = new System.Drawing.Point(321, 100);
+            this.filme2.Location = new System.Drawing.Point(264, 100);
             this.filme2.Name = "filme2";
             this.filme2.Size = new System.Drawing.Size(134, 161);
             this.filme2.TabIndex = 2;
@@ -136,7 +137,7 @@
             this.filme1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.filme1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.filme1.Enabled = false;
-            this.filme1.Location = new System.Drawing.Point(99, 100);
+            this.filme1.Location = new System.Drawing.Point(46, 100);
             this.filme1.Name = "filme1";
             this.filme1.Size = new System.Drawing.Size(134, 161);
             this.filme1.TabIndex = 1;

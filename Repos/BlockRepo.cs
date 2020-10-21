@@ -14,5 +14,17 @@ namespace CinemaPIM.Repos
             string query = "INSERT INTO `pim_coin`(`id_cliente_id`, `private_key_user`) VALUES ("+ idCliente+","+ "'" + key +"'" +")";
             Update(query);
         }
+
+        public int getId(int idCliente)
+        {
+            string query = "SELECT `id`  FROM `pim_coin` WHERE `id_cliente_id` ="+ "'" + idCliente + "'" + ";";
+
+            List<string> columnas = new List<string>();
+            columnas.Add("id");
+
+            List<string>[] data = Select(query, 1, columnas);
+
+            return Convert.ToInt32(data[0][0]);
+        }
     }
 }

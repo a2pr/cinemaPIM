@@ -56,5 +56,7 @@ namespace CinemaPIM.Classes
         {
             return base.GetNome();
         }
+
+        public int Id { get => id; set => id = value; }
     }
 }

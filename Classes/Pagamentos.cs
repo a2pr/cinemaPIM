@@ -11,6 +11,7 @@ namespace CinemaPIM.Classes
         private int id;
         private Clientes cliente;
         private float valor;
+        private int? idPimCoinTrans = null;
 
 
         public Pagamentos( Clientes cliente, float valor)
@@ -22,6 +23,8 @@ namespace CinemaPIM.Classes
 
         public int Id { get => id; set => id = value; }
         public float Valor { get => valor; set => valor = value; }
+
+        public int? PimCoinTrans { get => idPimCoinTrans; set => idPimCoinTrans = value; }
 
         public Clientes getCliente()
         {

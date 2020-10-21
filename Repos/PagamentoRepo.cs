@@ -19,7 +19,9 @@ namespace CinemaPIM.Repos
             int idCliente = newPagamento.getCliente().IdUsuario;
             float valor = newPagamento.Valor;
             int id = newPagamento.getId();
-            string query = "INSERT INTO `pagamento`(`id`, `id_cliente_id`, `use_pimcoin`, `valor`) VALUES ("+ id + "," + idCliente + ", 1 ," + valor + ")";
+            int pimCoinTransId = (int)newPagamento.PimCoinTrans;
+
+            string query = "INSERT INTO `pagamento`(`id`, `id_cliente_id`, `use_pimcoin`, `valor`, `id_pim_coin_trans_id`) VALUES (" + id + "," + idCliente + ", 1 ," + valor +","+ pimCoinTransId+ ")";
             Insert(query);
         } 
         public void newPagamentoUseCard(Pagamentos newPagamento)

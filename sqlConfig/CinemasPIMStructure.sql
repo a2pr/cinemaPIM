@@ -165,7 +165,8 @@ CREATE TABLE IF NOT EXISTS `pagamento` (
   `id_cliente_id` int(11) DEFAULT NULL,
   `use_pimcoin` tinyint(1) DEFAULT NULL,
   `use_card` tinyint(1) DEFAULT NULL,
-  `valor` double NOT NULL
+  `valor` double NOT NULL, 
+  'id_pim_coin_trans_id' int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -206,6 +207,14 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `admin` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+
+CREATE TABLE IF NOT EXISTS  `pim_coin_trans`(
+  `id` int(11) NOT NULL,
+  `hash_key_current` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `hash_key_previous` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `dtc` DATETIME NOT NULL,
+  `pim_coin_id` int(11) NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 --
 -- Índices para tablas volcadas
 --
@@ -436,6 +445,7 @@ ALTER TABLE `order`
 --
 ALTER TABLE `pagamento`
   ADD CONSTRAINT `FK_3E1F4B167BF9CE86` FOREIGN KEY (`id_cliente_id`) REFERENCES `clientes` (`id`);
+  ADD CONSTRAINT `FK_3E1F4B16819793DF` FOREIGN KEY (`id_pim_coin_trans_id`) REFERENCES `pim_coin_trans` (`id`)
 
 --
 -- Filtros para la tabla `pim_coin`
@@ -448,6 +458,9 @@ ALTER TABLE `pim_coin`
 --
 ALTER TABLE `sala`
   ADD CONSTRAINT `FK_E226041C34FE3891` FOREIGN KEY (`id_cinema_id`) REFERENCES `cinemas` (`id`);
+
+ALTER TABLE `pim_coin_trans` 
+  ADD CONSTRAINT FK_9F5709CC5A29E5 FOREIGN KEY (`pim_coin_id`) REFERENCES `pim_coin` (id)
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

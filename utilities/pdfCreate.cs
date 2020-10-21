@@ -13,14 +13,15 @@ namespace CinemaPIM.utilities
     {
         private IronPdf.HtmlToPdf Renderer= new IronPdf.HtmlToPdf();
         private htmlCreate htmlBuilder = new htmlCreate();
-        public void createInvoice(List<Ingressos> newIngressos)
+        public void createInvoice(List<Ingressos> newIngressos, order newOrder)
         {
-            string fileName = htmlBuilder.createInvoiceHTML(newIngressos);
+            string fileName = htmlBuilder.createInvoiceHTML(newIngressos, newOrder);
            
             var PDF = Renderer.RenderHTMLFileAsPdf(fileName+".html");
             PDF.SaveAs(fileName+".pdf");
             System.Diagnostics.Process.Start(fileName+".pdf");
         }
+
 
         public void createReportFilmes(List<string>[] data)
         {
