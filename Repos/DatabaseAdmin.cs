@@ -188,7 +188,9 @@ namespace CinemaPIM.Classes
 
         public void Backup()
         {
-            string file = "D:\\Documents\\Projects\\CinemaPIM\\backup.sql";
+            var executingFolder = System.IO.Path.GetDirectoryName(Application.StartupPath);
+
+            string file = executingFolder +"\\backup.sql";
             using (MySqlConnection conn = base.connection)
             {
                 using (MySqlCommand cmd = new MySqlCommand())
@@ -196,18 +198,22 @@ namespace CinemaPIM.Classes
                     using (MySqlBackup mb = new MySqlBackup(cmd))
                     {
                         cmd.Connection = conn;
+                        conn.Open();
                         mb.ExportToFile(file);
                         conn.Close();
                     }
                 }
             }
+            
         }
 
         //Restore
         public void Restore()
         {
             /*will be use in testing*/
-            string file = "D:\\Documents\\Projects\\CinemaPIM\\backup.sql";
+            var executingFolder = System.IO.Path.GetDirectoryName(Application.StartupPath);
+            string file = executingFolder + "\\backup.sql";
+
             using (MySqlConnection conn = base.connection)
             {
                 using (MySqlCommand cmd = new MySqlCommand())
