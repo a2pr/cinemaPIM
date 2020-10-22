@@ -50,7 +50,7 @@ namespace CinemaPIM.Repos
         public int lastOrder()
         {
             int id;
-            string query = "SELECT MAX(id) FROM `order`";
+            string query = "SELECT CASE WHEN COUNT(`id`) <  1 THEN 0 ELSE  MAX(`id`) END AS `id`  FROM `order`";
 
             id = Count(query);
 

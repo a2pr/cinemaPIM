@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.15.9
--- https://www.phpmyadmin.net
+-- version 4.9.1
+-- https://www.phpmyadmin.net/
 --
--- Servidor: localhost
--- Tiempo de generación: 31-05-2020 a las 17:08:01
--- Versión del servidor: 5.6.37
--- Versión de PHP: 5.6.31
+-- Host: localhost
+-- Generation Time: Oct 22, 2020 at 02:22 AM
+-- Server version: 5.6.37
+-- PHP Version: 7.3.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -17,16 +19,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `copyCinemasPIM`
+-- Database: `example_cinema`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `cadeiras`
+-- Table structure for table `cadeiras`
 --
 
-CREATE TABLE IF NOT EXISTS `cadeiras` (
+CREATE TABLE `cadeiras` (
   `id` int(11) NOT NULL,
   `id_sala_id` int(11) NOT NULL,
   `linha` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -36,10 +38,10 @@ CREATE TABLE IF NOT EXISTS `cadeiras` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `cards`
+-- Table structure for table `cards`
 --
 
-CREATE TABLE IF NOT EXISTS `cards` (
+CREATE TABLE `cards` (
   `id` int(11) NOT NULL,
   `id_cliente_id` int(11) NOT NULL,
   `nome` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -50,10 +52,10 @@ CREATE TABLE IF NOT EXISTS `cards` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `cinemas`
+-- Table structure for table `cinemas`
 --
 
-CREATE TABLE IF NOT EXISTS `cinemas` (
+CREATE TABLE `cinemas` (
   `id` int(11) NOT NULL,
   `id_endereco_id` int(11) NOT NULL,
   `nome` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
@@ -62,10 +64,10 @@ CREATE TABLE IF NOT EXISTS `cinemas` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `clientes`
+-- Table structure for table `clientes`
 --
 
-CREATE TABLE IF NOT EXISTS `clientes` (
+CREATE TABLE `clientes` (
   `id` int(11) NOT NULL,
   `endereco_id` int(11) NOT NULL,
   `cpf` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -78,10 +80,10 @@ CREATE TABLE IF NOT EXISTS `clientes` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `endereco`
+-- Table structure for table `endereco`
 --
 
-CREATE TABLE IF NOT EXISTS `endereco` (
+CREATE TABLE `endereco` (
   `id` int(11) NOT NULL,
   `rua` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `cidade` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -92,10 +94,10 @@ CREATE TABLE IF NOT EXISTS `endereco` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `filme`
+-- Table structure for table `filme`
 --
 
-CREATE TABLE IF NOT EXISTS `filme` (
+CREATE TABLE `filme` (
   `id` int(11) NOT NULL,
   `cinemas_id` int(11) DEFAULT NULL,
   `titulo` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -108,10 +110,10 @@ CREATE TABLE IF NOT EXISTS `filme` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `ingressos`
+-- Table structure for table `ingressos`
 --
 
-CREATE TABLE IF NOT EXISTS `ingressos` (
+CREATE TABLE `ingressos` (
   `id` int(11) NOT NULL,
   `cinema_id` int(11) NOT NULL,
   `id_cadeira_id` int(11) NOT NULL,
@@ -123,10 +125,10 @@ CREATE TABLE IF NOT EXISTS `ingressos` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `ingressos_filme`
+-- Table structure for table `ingressos_filme`
 --
 
-CREATE TABLE IF NOT EXISTS `ingressos_filme` (
+CREATE TABLE `ingressos_filme` (
   `ingressos_id` int(11) NOT NULL,
   `filme_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -134,10 +136,10 @@ CREATE TABLE IF NOT EXISTS `ingressos_filme` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `migration_versions`
+-- Table structure for table `migration_versions`
 --
 
-CREATE TABLE IF NOT EXISTS `migration_versions` (
+CREATE TABLE `migration_versions` (
   `version` varchar(14) COLLATE utf8mb4_unicode_ci NOT NULL,
   `executed_at` datetime NOT NULL COMMENT '(DC2Type:datetime_immutable)'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -145,10 +147,10 @@ CREATE TABLE IF NOT EXISTS `migration_versions` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `order`
+-- Table structure for table `order`
 --
 
-CREATE TABLE IF NOT EXISTS `order` (
+CREATE TABLE `order` (
   `id` int(11) NOT NULL,
   `id_pagamento_id` int(11) NOT NULL,
   `id_cliente_id` int(11) NOT NULL
@@ -157,25 +159,25 @@ CREATE TABLE IF NOT EXISTS `order` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `pagamento`
+-- Table structure for table `pagamento`
 --
 
-CREATE TABLE IF NOT EXISTS `pagamento` (
+CREATE TABLE `pagamento` (
   `id` int(11) NOT NULL,
   `id_cliente_id` int(11) DEFAULT NULL,
   `use_pimcoin` tinyint(1) DEFAULT NULL,
   `use_card` tinyint(1) DEFAULT NULL,
-  `valor` double NOT NULL, 
-  'id_pim_coin_trans_id' int(11) DEFAULT NULL
+  `valor` double NOT NULL,
+  `id_pim_coin_trans_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `pim_coin`
+-- Table structure for table `pim_coin`
 --
 
-CREATE TABLE IF NOT EXISTS `pim_coin` (
+CREATE TABLE `pim_coin` (
   `id` int(11) NOT NULL,
   `id_cliente_id` int(11) NOT NULL,
   `private_key_user` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL
@@ -184,10 +186,24 @@ CREATE TABLE IF NOT EXISTS `pim_coin` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `sala`
+-- Table structure for table `pim_coin_trans`
 --
 
-CREATE TABLE IF NOT EXISTS `sala` (
+CREATE TABLE `pim_coin_trans` (
+  `id` int(11) NOT NULL,
+  `hash_key_current` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `hash_key_previous` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `dtc` datetime NOT NULL,
+  `pim_coin_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sala`
+--
+
+CREATE TABLE `sala` (
   `id` int(11) NOT NULL,
   `id_cinema_id` int(11) NOT NULL,
   `horarios` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
@@ -196,10 +212,10 @@ CREATE TABLE IF NOT EXISTS `sala` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuarios`
+-- Table structure for table `usuarios`
 --
 
-CREATE TABLE IF NOT EXISTS `usuarios` (
+CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `nome` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -207,41 +223,33 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `admin` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-
-CREATE TABLE IF NOT EXISTS  `pim_coin_trans`(
-  `id` int(11) NOT NULL,
-  `hash_key_current` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `hash_key_previous` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `dtc` DATETIME NOT NULL,
-  `pim_coin_id` int(11) NOT NULL
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 --
--- Índices para tablas volcadas
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `cadeiras`
+-- Indexes for table `cadeiras`
 --
 ALTER TABLE `cadeiras`
   ADD PRIMARY KEY (`id`),
   ADD KEY `IDX_7081F4C61B81764F` (`id_sala_id`);
 
 --
--- Indices de la tabla `cards`
+-- Indexes for table `cards`
 --
 ALTER TABLE `cards`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `UNIQ_4C258FD7BF9CE86` (`id_cliente_id`);
 
 --
--- Indices de la tabla `cinemas`
+-- Indexes for table `cinemas`
 --
 ALTER TABLE `cinemas`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `UNIQ_D7D63B9A3A5A5D4` (`id_endereco_id`);
 
 --
--- Indices de la tabla `clientes`
+-- Indexes for table `clientes`
 --
 ALTER TABLE `clientes`
   ADD PRIMARY KEY (`id`),
@@ -249,20 +257,20 @@ ALTER TABLE `clientes`
   ADD UNIQUE KEY `UNIQ_50FE07D77EB2C349` (`id_usuario_id`);
 
 --
--- Indices de la tabla `endereco`
+-- Indexes for table `endereco`
 --
 ALTER TABLE `endereco`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `filme`
+-- Indexes for table `filme`
 --
 ALTER TABLE `filme`
   ADD PRIMARY KEY (`id`),
   ADD KEY `IDX_3A387F00C5C76018` (`cinemas_id`);
 
 --
--- Indices de la tabla `ingressos`
+-- Indexes for table `ingressos`
 --
 ALTER TABLE `ingressos`
   ADD PRIMARY KEY (`id`),
@@ -271,7 +279,7 @@ ALTER TABLE `ingressos`
   ADD KEY `IDX_8ED539D1DD4481AD` (`id_order_id`);
 
 --
--- Indices de la tabla `ingressos_filme`
+-- Indexes for table `ingressos_filme`
 --
 ALTER TABLE `ingressos_filme`
   ADD PRIMARY KEY (`ingressos_id`,`filme_id`),
@@ -279,13 +287,13 @@ ALTER TABLE `ingressos_filme`
   ADD KEY `IDX_3F72F9C0E6E418AD` (`filme_id`);
 
 --
--- Indices de la tabla `migration_versions`
+-- Indexes for table `migration_versions`
 --
 ALTER TABLE `migration_versions`
   ADD PRIMARY KEY (`version`);
 
 --
--- Indices de la tabla `order`
+-- Indexes for table `order`
 --
 ALTER TABLE `order`
   ADD PRIMARY KEY (`id`),
@@ -293,133 +301,159 @@ ALTER TABLE `order`
   ADD KEY `IDX_F52993987BF9CE86` (`id_cliente_id`);
 
 --
--- Indices de la tabla `pagamento`
+-- Indexes for table `pagamento`
 --
 ALTER TABLE `pagamento`
   ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `UNIQ_3E1F4B16819793DF` (`id_pim_coin_trans_id`),
   ADD KEY `IDX_3E1F4B167BF9CE86` (`id_cliente_id`);
 
 --
--- Indices de la tabla `pim_coin`
+-- Indexes for table `pim_coin`
 --
 ALTER TABLE `pim_coin`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `UNIQ_AD584B107BF9CE86` (`id_cliente_id`);
 
 --
--- Indices de la tabla `sala`
+-- Indexes for table `pim_coin_trans`
+--
+ALTER TABLE `pim_coin_trans`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `IDX_9F5709CC5A29E5` (`pim_coin_id`);
+
+--
+-- Indexes for table `sala`
 --
 ALTER TABLE `sala`
   ADD PRIMARY KEY (`id`),
   ADD KEY `IDX_E226041C34FE3891` (`id_cinema_id`);
 
 --
--- Indices de la tabla `usuarios`
+-- Indexes for table `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de la tabla `cadeiras`
+-- AUTO_INCREMENT for table `cadeiras`
 --
 ALTER TABLE `cadeiras`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7001;
+
 --
--- AUTO_INCREMENT de la tabla `cards`
+-- AUTO_INCREMENT for table `cards`
 --
 ALTER TABLE `cards`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
--- AUTO_INCREMENT de la tabla `cinemas`
+-- AUTO_INCREMENT for table `cinemas`
 --
 ALTER TABLE `cinemas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
 --
--- AUTO_INCREMENT de la tabla `clientes`
+-- AUTO_INCREMENT for table `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
 --
--- AUTO_INCREMENT de la tabla `endereco`
+-- AUTO_INCREMENT for table `endereco`
 --
 ALTER TABLE `endereco`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
 --
--- AUTO_INCREMENT de la tabla `filme`
+-- AUTO_INCREMENT for table `filme`
 --
 ALTER TABLE `filme`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
 --
--- AUTO_INCREMENT de la tabla `ingressos`
+-- AUTO_INCREMENT for table `ingressos`
 --
 ALTER TABLE `ingressos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+
 --
--- AUTO_INCREMENT de la tabla `order`
+-- AUTO_INCREMENT for table `order`
 --
 ALTER TABLE `order`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11892;
+
 --
--- AUTO_INCREMENT de la tabla `pagamento`
+-- AUTO_INCREMENT for table `pagamento`
 --
 ALTER TABLE `pagamento`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10894;
+
 --
--- AUTO_INCREMENT de la tabla `pim_coin`
+-- AUTO_INCREMENT for table `pim_coin`
 --
 ALTER TABLE `pim_coin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
--- AUTO_INCREMENT de la tabla `sala`
+-- AUTO_INCREMENT for table `pim_coin_trans`
+--
+ALTER TABLE `pim_coin_trans`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `sala`
 --
 ALTER TABLE `sala`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
 --
--- AUTO_INCREMENT de la tabla `usuarios`
+-- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
 --
--- Restricciones para tablas volcadas
+-- Constraints for dumped tables
 --
 
 --
--- Filtros para la tabla `cadeiras`
+-- Constraints for table `cadeiras`
 --
 ALTER TABLE `cadeiras`
   ADD CONSTRAINT `FK_7081F4C61B81764F` FOREIGN KEY (`id_sala_id`) REFERENCES `sala` (`id`);
 
 --
--- Filtros para la tabla `cards`
+-- Constraints for table `cards`
 --
 ALTER TABLE `cards`
   ADD CONSTRAINT `FK_4C258FD7BF9CE86` FOREIGN KEY (`id_cliente_id`) REFERENCES `clientes` (`id`);
 
 --
--- Filtros para la tabla `cinemas`
+-- Constraints for table `cinemas`
 --
 ALTER TABLE `cinemas`
   ADD CONSTRAINT `FK_D7D63B9A3A5A5D4` FOREIGN KEY (`id_endereco_id`) REFERENCES `endereco` (`id`);
 
 --
--- Filtros para la tabla `clientes`
+-- Constraints for table `clientes`
 --
 ALTER TABLE `clientes`
   ADD CONSTRAINT `FK_50FE07D71BB76823` FOREIGN KEY (`endereco_id`) REFERENCES `endereco` (`id`),
   ADD CONSTRAINT `FK_50FE07D77EB2C349` FOREIGN KEY (`id_usuario_id`) REFERENCES `usuarios` (`id`);
 
 --
--- Filtros para la tabla `filme`
+-- Constraints for table `filme`
 --
 ALTER TABLE `filme`
   ADD CONSTRAINT `FK_3A387F00C5C76018` FOREIGN KEY (`cinemas_id`) REFERENCES `cinemas` (`id`);
 
 --
--- Filtros para la tabla `ingressos`
+-- Constraints for table `ingressos`
 --
 ALTER TABLE `ingressos`
   ADD CONSTRAINT `FK_8ED539D1B4CB84B6` FOREIGN KEY (`cinema_id`) REFERENCES `cinemas` (`id`),
@@ -427,40 +461,44 @@ ALTER TABLE `ingressos`
   ADD CONSTRAINT `FK_8ED539D1DD4481AD` FOREIGN KEY (`id_order_id`) REFERENCES `order` (`id`);
 
 --
--- Filtros para la tabla `ingressos_filme`
+-- Constraints for table `ingressos_filme`
 --
 ALTER TABLE `ingressos_filme`
   ADD CONSTRAINT `FK_3F72F9C012373158` FOREIGN KEY (`ingressos_id`) REFERENCES `ingressos` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `FK_3F72F9C0E6E418AD` FOREIGN KEY (`filme_id`) REFERENCES `filme` (`id`) ON DELETE CASCADE;
 
 --
--- Filtros para la tabla `order`
+-- Constraints for table `order`
 --
 ALTER TABLE `order`
   ADD CONSTRAINT `FK_F52993987BF9CE86` FOREIGN KEY (`id_cliente_id`) REFERENCES `clientes` (`id`),
   ADD CONSTRAINT `FK_F5299398C3AEF485` FOREIGN KEY (`id_pagamento_id`) REFERENCES `pagamento` (`id`);
 
 --
--- Filtros para la tabla `pagamento`
+-- Constraints for table `pagamento`
 --
 ALTER TABLE `pagamento`
-  ADD CONSTRAINT `FK_3E1F4B167BF9CE86` FOREIGN KEY (`id_cliente_id`) REFERENCES `clientes` (`id`);
-  ADD CONSTRAINT `FK_3E1F4B16819793DF` FOREIGN KEY (`id_pim_coin_trans_id`) REFERENCES `pim_coin_trans` (`id`)
+  ADD CONSTRAINT `FK_3E1F4B167BF9CE86` FOREIGN KEY (`id_cliente_id`) REFERENCES `clientes` (`id`),
+  ADD CONSTRAINT `FK_3E1F4B16819793DF` FOREIGN KEY (`id_pim_coin_trans_id`) REFERENCES `pim_coin_trans` (`id`);
 
 --
--- Filtros para la tabla `pim_coin`
+-- Constraints for table `pim_coin`
 --
 ALTER TABLE `pim_coin`
   ADD CONSTRAINT `FK_AD584B107BF9CE86` FOREIGN KEY (`id_cliente_id`) REFERENCES `clientes` (`id`);
 
 --
--- Filtros para la tabla `sala`
+-- Constraints for table `pim_coin_trans`
+--
+ALTER TABLE `pim_coin_trans`
+  ADD CONSTRAINT `FK_9F5709CC5A29E5` FOREIGN KEY (`pim_coin_id`) REFERENCES `pim_coin` (`id`);
+
+--
+-- Constraints for table `sala`
 --
 ALTER TABLE `sala`
   ADD CONSTRAINT `FK_E226041C34FE3891` FOREIGN KEY (`id_cinema_id`) REFERENCES `cinemas` (`id`);
-
-ALTER TABLE `pim_coin_trans` 
-  ADD CONSTRAINT FK_9F5709CC5A29E5 FOREIGN KEY (`pim_coin_id`) REFERENCES `pim_coin` (id)
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

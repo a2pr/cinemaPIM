@@ -36,7 +36,7 @@ namespace CinemaPIM.Repos
         public int lastPagamento()
         {
             int id;
-            string query = "SELECT MAX(id) FROM `pagamento`";
+            string query = "SELECT CASE WHEN COUNT(`id`) <  1 THEN 0 ELSE  MAX(`id`) END AS `id`  FROM `pagamento`";
 
             id = Count(query);
 
