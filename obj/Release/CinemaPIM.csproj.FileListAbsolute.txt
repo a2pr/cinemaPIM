@@ -67,3 +67,4 @@ D:\Documents\Projects\CinemaPIM\obj\Release\CinemaPIM.csproj.CoreCompileInputs.c
 D:\Documents\Projects\CinemaPIM\obj\Release\CinemaPIM.csproj.CopyComplete
 D:\Documents\Projects\CinemaPIM\obj\Release\CinemaPIM.exe
 D:\Documents\Projects\CinemaPIM\obj\Release\CinemaPIM.pdb
+D:\Documents\Projects\CinemaPIM\obj\Release\CinemaPIM.csprojAssemblyReference.cache
